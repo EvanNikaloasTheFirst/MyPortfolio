@@ -2,7 +2,7 @@
    
 body{
     display: grid;
-    background-color: silver;
+    background-color: white;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -18,7 +18,7 @@ body{
 
 header{
     grid-area: header;
-    background-color: silver;
+    background-color: black;
     width: 100%;
 
     margin-left: -8px;
@@ -41,36 +41,35 @@ header h1{
     font-family: 'Hubballi', cursive;
     
     text-align: center;
-    color: white;
     position: relative;
     bottom: 5%;
 }
 header a {
     text-decoration: none;
+    color: white;
 }
 #home{
     text-decoration: underline;
-    color: black;
+    color: white;
 }
 .shownav {
     content: url(burgericon.png);
     width: 45px;
     position: relative;
-    left: 90%;
-    
+    left: 89%;
+    bottom: 55px;
+    filter: invert(100);
     z-index: 1;
   
-    
-    
-    
     }
 #hamburger{
     position: relative;
     text-decoration: none;
-    left: 90%;
+    left: 89%;
     bottom: px;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Hubballi', cursive;
+    bottom: 55px;
 }
 /*When "an item" is clicked - show the menu */
 #clicked .on{display: block;}
@@ -83,11 +82,11 @@ header a {
 #clicked:target nav {display: none;}
 #home{
     text-decoration: underline;
-    color: black;
+    color: grey;
 }
 nav {
     grid-area: nav;
-    background-color: yellow;
+    background-color: black;
     font-family: 'Hubballi', cursive;
     margin-left: -8px;
     
@@ -106,20 +105,23 @@ nav {
     color: white;
     position: relative;
     right: 5%;
+    
 }
     .list a {
         text-decoration: none;
         color: grey;
+        
     }
     .list ul li{
         padding-top: 50px;
+        list-style-type: none;
     }
 main {
     grid-area: main;
-    background-color: pink;
+    background-color: white;
     width: 100%;
     font-family: 'Hubballi', cursive;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
     margin-left: -8px;
     
     
@@ -128,7 +130,7 @@ main {
     font-size: 2em;
     position: relative;
     top: 300px;
-    left: 5%;
+    text-align: center;
     
     
 }
@@ -156,12 +158,13 @@ button{
     position: relative;
     left: 35%;
     top: 50px;
+    font-weight: bolder;
 }
 
 footer {
     grid-area: footer;
     width: 100%;
-    background-color: grey;
+    background-color: white;
     
     margin-left: -8px;
 }
@@ -169,16 +172,17 @@ footer {
 footer p{
     font-size:1em;
     font-family: 'Hubballi', cursive;
-    color: white;
+    color: black;
     position: relative;
     text-align: center;
-    top: 15%;
+    top: 25%;
+    
 }
 .media{
+    
     position: relative;
-    bottom: 10%;
-    left: 10%;
- 
+    bottom: 40%;
+    right: 9%;
     
 }
 .media li{
@@ -188,10 +192,9 @@ footer p{
 }
 
 .media ul  {
-    display:inline-flex;
-    padding-left: 100px;
+    display:block;
+    padding-top: 100px;
     position: relative;
-    left: 5%;
     font-size: 1.5em
 
 }
@@ -199,6 +202,7 @@ footer p{
 .techStack{
     position: relative;
     text-align: center;
+    top: 15%;
     }
     
     .techStack li{
