@@ -1,0 +1,295 @@
+body {
+    
+    display: grid;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    grid-template-columns: auto;
+    grid-template-rows: 3% 4% 70% 5%;
+    grid-template-areas:"header header header"
+                            "nav nav nav"
+                            "main main main"
+                        "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    width: 100vw;
+    height: 7.8vh;
+    margin-left: -8px;
+    margin-top: -8px;
+    font-family: 'Hubballi', cursive;
+}
+header h1{
+    font-size: 8em;
+    font-family: 'Hubballi', cursive;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 25%;
+
+}
+header  a {
+    text-decoration: none;
+}
+header a:visited{
+    color: white;
+}
+header a:link{
+    color: white;
+}
+header a:hover{
+    color: rgba(128, 128, 128, 0.531);
+}
+
+.hamburg ul {
+    list-style-type: none;
+    
+}
+
+#year1{
+    text-decoration: underline;
+    color: black;
+}
+
+#headshotMini{
+    width: 80px;
+    border-radius: 30%;
+    position: relative;
+    top: 15px;
+}
+
+#headshotMini:hover{
+    filter: grayscale(100);
+}
+
+nav{
+    grid-area: nav;
+    background-color: white;
+    width: 100vw;
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    margin-left: -8px;
+ 
+}
+.list{
+    font-size: 3em;
+    color: white;
+    position: relative;
+    top: 10%;
+  
+    
+}
+.list li {
+    display:inline-flex;
+    padding-left: 100px;
+    position: relative;
+    left: 25%;
+    font-size: 1.5em;
+    font-weight: bolder;
+    
+   
+}
+.list a{
+    text-decoration: none;
+}
+
+.list li:hover{
+    color: white;
+}
+
+.list a:visited{
+    color: black;
+}
+#instagram {
+    width: 50px;
+}
+#instagram:hover{
+    filter: grayscale(100);
+}
+#linkedin {
+    width: 50px;
+}
+#linkedin:hover{
+    filter: grayscale(100);
+}
+#github {
+    width: 50px;
+}
+#github:hover{
+    filter: grayscale(100);
+}
+
+
+
+main{
+    grid-area: main;
+    background-color: white;
+    width: 100vw;
+    font-family: 'Hubballi', cursive;
+    padding-bottom: 1000px;
+    margin-left: -8px;
+}
+.maintext p{
+    font-size: 5em;
+    position: relative;
+    top: 300px;
+    left: 5%;
+    
+    
+}
+.maintext {
+
+    font-family: 'Hubballi', cursive;
+    color: black;
+    position: relative;
+}
+
+.maintext p:nth-child(1){
+    position: relative;
+    left: 42%;
+    top: 200px;
+    font-size: 10em;
+}
+
+.maintext p:nth-child(2){
+    position: relative;
+    text-align: center;
+    top: 200px;
+    border: 2px solid white;
+    width: 70%;
+    margin-left: 12%;
+}
+.maintext ul{
+    font-size: 5em;
+    position: relative;
+    text-align: center;
+    top: 200px;
+    border: 2px solid white;
+    width: 40%;
+    margin-left: 28%;
+    list-style-type: none;
+    color: grey;
+}
+
+#dbms {
+    position: relative;
+    left: 12%;
+    top: 150px;
+    border-radius: 5%;
+    width: 1500px;
+}
+
+.SE1{
+    font-family: 'Hubballi', cursive;
+    color: black;
+    position: relative;
+    font-size: 4em;
+}
+
+.SE1 p:nth-child(2) {
+    position: relative;
+    left: 50%;
+    bottom: 830px;
+    border: 2px solid white;
+    width: 40%;
+}
+
+.programming{
+    font-family: 'Hubballi', cursive;
+    color: black;
+    position: relative;
+    font-size: 4em;
+}
+#ccprogram{
+    position: relative;
+    left: 12%;
+    bottom: 260px;
+    border-radius: 5%;
+    width: 1500px
+}
+
+
+.programming p:nth-child(2){
+    position: relative;
+    left: 50%;
+    bottom: 830px;
+    border: 2px solid white;
+    width: 40%;
+}
+
+.webDev{
+    font-family: 'Hubballi', cursive;
+    color: black;
+    position: relative;
+    font-size: 4em;
+}
+
+#marley {
+    position: relative;
+    left: 12%;
+    bottom: 300px;
+    border-radius: 5%;
+    width: 1500px
+}
+
+.webDev p:nth-child(2){
+    position: relative;
+    left: 50%;
+    bottom: 1230px;
+    border: 2px solid white;
+    width: 40%;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: grey;
+    width: 100vw;
+    margin-left: -8px;
+    padding-bottom: 1600px;
+}
+
+footer p{
+    font-size:5em;
+    font-family: 'Hubballi', cursive;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 900px;
+}
+
+.media li {
+    display:inline-flex;
+    padding-left: 100px;
+    position: relative;
+    left: 45%;
+    top: 600px;
+    font-size: 1.5em
+
+}
+
+
+
+#hamburger{
+    visibility: hidden;
+}
+
+
+
+.techStack{
+position: relative;
+margin-left: 25%;
+top: 300px;
+}
+
+.techStack li{
+    display:inline-flex;
+    padding-left: 300px;
+    position: relative;
+}
+
+.techStack ul{
+    list-style-type: none;
+}
