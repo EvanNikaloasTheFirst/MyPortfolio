@@ -1,0 +1,242 @@
+
+   
+body{
+    display: grid;
+    background-color: silver;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:    "header "
+                            "nav"
+                            "main"
+                            "footer";
+}
+
+
+header{
+    grid-area: header;
+    background-color: silver;
+    width: 100%;
+
+    margin-left: -8px;
+    margin-top: -8px;
+    font-family: 'Hubballi', cursive;
+    height: 50%;
+    
+    
+}
+.hamburg li {
+    list-style-type: none;text-decoration: none;
+}
+#headshotMini{
+    width: 30px;
+    border-radius: 30%;
+   
+}
+header h1{
+    font-size: 2em;
+    font-family: 'Hubballi', cursive;
+    
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 5%;
+}
+header a {
+    text-decoration: none;
+}
+#home{
+    text-decoration: underline;
+    color: black;
+}
+.shownav {
+    content: url(burgericon.png);
+    width: 45px;
+    position: relative;
+    left: 90%;
+    
+    z-index: 1;
+  
+    
+    
+    
+    }
+#hamburger{
+    position: relative;
+    text-decoration: none;
+    left: 90%;
+    bottom: px;
+    font-size: 3em;
+    font-family: 'Hubballi', cursive;
+}
+/*When "an item" is clicked - show the menu */
+#clicked .on{display: block;}
+/*when its clicked again remove it */
+#clicked .off {display: none;}
+
+#clicked:target .on {display: none;}
+#clicked:target .off {display: block;}
+/* Target the nav - so the nav turns on an off*/
+#clicked:target nav {display: none;}
+#home{
+    text-decoration: underline;
+    color: black;
+}
+nav {
+    grid-area: nav;
+    background-color: yellow;
+    font-family: 'Hubballi', cursive;
+    margin-left: -8px;
+    
+    display: block;
+    top: 0;
+    position:fixed;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+
+    z-index: 2;
+}
+
+.list{
+    font-size: 1em;
+    color: white;
+    position: relative;
+    right: 5%;
+}
+    .list a {
+        text-decoration: none;
+        color: grey;
+    }
+    .list ul li{
+        padding-top: 50px;
+    }
+main {
+    grid-area: main;
+    background-color: pink;
+    width: 100%;
+    font-family: 'Hubballi', cursive;
+    padding-bottom: 100px;
+    margin-left: -8px;
+    
+    
+}
+.maintext p{
+    font-size: 2em;
+    position: relative;
+    top: 300px;
+    left: 5%;
+    
+    
+}
+#headshot{
+    position: relative;
+    left: 20%;
+    bottom: 200px;
+    border-radius: 5%;
+    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+}
+
+button{
+    font-size: 1em;
+    text-decoration:none;
+    border-radius:5px;
+    border:solid 1px black;
+    background: grey;
+    text-align:center;
+    padding:16px 18px 14px;
+    transition: all 0.1s;
+    font-family: 'Hubballi', cursive;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+    position: relative;
+    left: 35%;
+    top: 50px;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: grey;
+    
+    margin-left: -8px;
+}
+
+footer p{
+    font-size:1em;
+    font-family: 'Hubballi', cursive;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 15%;
+}
+.media{
+    position: relative;
+    bottom: 10%;
+    left: 10%;
+ 
+    
+}
+.media li{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.media ul  {
+    display:inline-flex;
+    padding-left: 100px;
+    position: relative;
+    left: 5%;
+    font-size: 1.5em
+
+}
+
+.techStack{
+    position: relative;
+    text-align: center;
+    }
+    
+    .techStack li{
+        display:block;
+        padding-top: 10px;
+        position: relative;
+    }
+    
+    .techStack ul{
+        list-style-type: none;
+    }
+
+    #java {
+        width: 70px;
+    }
+    #html2 {
+        width: 70px;
+    }
+    #css2 {
+        width: 70px;
+    }
+    #sql2 {
+        width: 70px;
+    }
+    #oracle2 {
+        width: 70px;
+    }
+    
+
+    
+
+
+    #instagram{
+        width: 20px;
+    }
+    #github{
+        width: 20px;
+    }
+    #linkedin{
+        width:20px;
+    }
