@@ -51,7 +51,7 @@ header a {
     text-decoration: none;
     color: white;
 }
-#home{
+#year1{
     text-decoration: underline;
     color: white;
 }
@@ -130,11 +130,63 @@ main {
     
 }
 .maintext p{
-    font-size: 2em;
+    font-size: 1em;
     position: relative;
-    top: 300px;
-    text-align: center;
+    top: 5%;
+    left: 2%;
+    border: 2px solid white;
+    width: 90%;
+
+}
+.maintext p:nth-child(1){
+    font-size: 2em;
+}
+
+.SE1 p:nth-child(2){
+    position: relative;
+    top: 10%;
+    left: 2%;
+    border: 2px solid white;
+    width: 90%;
+}
+
+.programming{
+    font-size: 1em;
+    position: relative;
+    top: 5%;
+    text-align: center
     
+}
+.programming p:nth-child(2){
+    left: 2%;
+    border: 2px solid white;
+    width: 90%;
+}
+
+.webDev{
+    font-size: 1em;
+    position: relative;
+    top: 5%;
+    text-align: center
+}
+
+.webDev p:nth-child(2){
+    left: 2%;
+    border: 2px solid white;
+    width: 90%;
+}
+
+#marley{
+    width: 350px;
+}
+#ccprogram{
+    width: 350px;
+}
+#dbms{
+    width: 350px;
+    position: relative;
+    text-align: center;
+    border-radius: 5%;
     
 }
 #headshot{
