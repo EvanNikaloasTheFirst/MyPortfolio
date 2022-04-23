@@ -22,6 +22,7 @@ header{
     width: 100%;
 
     margin-left: -8px;
+
     margin-top: -8px;
     font-family: 'Hubballi', cursive;
     height: 50%;
@@ -182,13 +183,13 @@ footer p{
     
     position: relative;
     bottom: 40%;
-    right: 9%;
+    right: 7%;
     
 }
 .media li{
     text-decoration: none;
     list-style-type: none;
-    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .media ul  {
@@ -207,7 +208,7 @@ footer p{
     
     .techStack li{
         display:block;
-        padding-top: 10px;
+        padding-top: 80px;
         position: relative;
     }
     
