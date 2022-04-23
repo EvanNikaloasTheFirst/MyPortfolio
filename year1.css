@@ -15,11 +15,16 @@ body {
 header{
     grid-area: header;
     background-color: black;
-    width: 100vw;
-    height: 7.8vh;
+    width: 100%;
+    padding-bottom: 0em;
     margin-left: -8px;
+
     margin-top: -8px;
     font-family: 'Hubballi', cursive;
+    height: 67%;
+
+    
+    
 }
 header h1{
     font-size: 8em;
@@ -47,6 +52,7 @@ header a:hover{
     list-style-type: none;
     
 }
+
 
 #year1{
     text-decoration: underline;
@@ -77,7 +83,7 @@ nav{
     font-size: 3em;
     color: white;
     position: relative;
-    top: 10%;
+    bottom:  25%;
   
     
 }
@@ -139,24 +145,25 @@ main{
     
     
 }
-.maintext {
+.maintext p{
 
     font-family: 'Hubballi', cursive;
     color: black;
     position: relative;
+   
 }
 
 .maintext p:nth-child(1){
-    position: relative;
+   top: -300px;
     left: 42%;
-    top: 200px;
+    
     font-size: 10em;
 }
 
 .maintext p:nth-child(2){
     position: relative;
     text-align: center;
-    top: 200px;
+    top: -200px;
     border: 2px solid white;
     width: 70%;
     margin-left: 12%;
@@ -165,7 +172,7 @@ main{
     font-size: 5em;
     position: relative;
     text-align: center;
-    top: 200px;
+    top: -200px;
     border: 2px solid white;
     width: 40%;
     margin-left: 28%;
