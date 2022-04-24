@@ -1,0 +1,265 @@
+body {
+    
+    display: grid;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    grid-template-columns: auto;
+    grid-template-rows: 3% 4% 70% 5%;
+    grid-template-areas:"header header header"
+                            "nav nav nav"
+                            "main main main"
+                        "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    width: 100vw;
+    margin-left: -8px;
+    margin-top: -8px;
+    font-family: 'Hubballi', cursive;
+}
+header h1{
+    font-size: 8em;
+    font-family: 'Hubballi', cursive;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 25%;
+
+}
+header  a {
+    text-decoration: none;
+}
+header a:visited{
+    color: white;
+}
+header a:link{
+    color: white;
+}
+header a:hover{
+    color: rgba(128, 128, 128, 0.531);
+}
+
+.hamburg ul {
+    list-style-type: none;
+    
+}
+
+#sitereport{
+    text-decoration: underline;
+    color: black;
+}
+
+#headshotMini{
+    width: 80px;
+    border-radius: 30%;
+    position: relative;
+    top: 15px;
+}
+
+#headshotMini:hover{
+    filter: grayscale(100);
+}
+
+nav{
+    grid-area: nav;
+    background-color: white;
+    width: 100vw;
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    margin-left: -8px;
+ 
+}
+.list{
+    font-size: 3em;
+    color: white;
+    position: relative;
+    top: 10%;
+  
+    
+}
+.list li {
+    display:inline-flex;
+    padding-left: 100px;
+    position: relative;
+    left: 25%;
+    font-size: 1.5em;
+    font-weight: bolder;
+    
+   
+}
+.list a{
+    text-decoration: none;
+}
+
+.list li:hover{
+    color: white;
+}
+
+.list a:visited{
+    color: black;
+}
+#instagram {
+    width: 50px;
+}
+#instagram:hover{
+    filter: grayscale(100);
+}
+#linkedin {
+    width: 50px;
+}
+#linkedin:hover{
+    filter: grayscale(100);
+}
+#github {
+    width: 50px;
+}
+#github:hover{
+    filter: grayscale(100);
+}
+
+
+
+main{
+    grid-area: main;
+    background-color: white;
+    width: 100vw;
+    font-family: 'Hubballi', cursive;
+    padding-bottom: 2600px;
+    margin-left: -8px;
+}
+
+
+.maintext p{
+    font-size: 5em;
+        position: relative;
+    top: 300px;
+    left: 5%;
+}
+
+.maintext h1 {
+    position: relative;
+    left: 43%;
+    bottom: 100px;
+    font-size: 10em;
+}
+
+.maintext p:nth-child(2){
+    border: 2px solid white;
+    width:70%;
+    left: 17%;
+    top: -100px;
+}
+#week1 {
+    position: relative;
+    left: 15%;
+    width:70%;
+}
+
+.maintext p:nth-child(4){
+    border: 2px solid white;
+    width:70%;
+    left: 15%;
+    top: -1100px;
+}
+
+#grid{
+    position: relative;
+    width: 2000px;
+    left: 34%;
+    bottom: 750px;
+}
+.maintext p:nth-child(6){
+    border: 2px solid white;
+    width:70%;
+    left: 15%;
+    top: -750px;
+}
+#draftOne{
+width: 1200px;
+border-radius: 5%;
+position: relative;
+left: 42%;
+bottom: 600px;
+}
+
+.maintext p:nth-child(8){
+    position: relative;
+    border: 2px solid white;
+    width:70%;
+    left: 15%;
+    top: -550px;
+}
+
+#oldmobiledesign{
+    position: relative;
+    left: 45%;
+    bottom:400px;
+}
+.maintext p:nth-child(10){
+    position: relative;
+    border: 2px solid white;
+    width:60%;
+    left: 23%;
+    top: -350px;
+}
+
+
+#ss{
+    position: relative;
+    width: 60%;
+    left: 20%;
+    bottom: 100px;
+}
+footer{
+    grid-area: footer;
+    background-color: grey;
+    width: 100vw;
+    margin-left: -8px;
+    padding-bottom: 1600px;
+}
+
+footer p{
+    font-size:5em;
+    font-family: 'Hubballi', cursive;
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 900px;
+}
+
+.media li {
+    display:inline-flex;
+    padding-left: 100px;
+    position: relative;
+    left: 45%;
+    top: 600px;
+    font-size: 1.5em
+
+}
+
+
+
+#hamburger{
+    visibility: hidden;
+}
+
+
+
+.techStack{
+position: relative;
+left:30%;
+top: 300px;
+}
+
+.techStack li{
+    display:inline-flex;
+    padding-left: 300px;
+    position: relative;
+}
+
+.techStack ul{
+    list-style-type: none;
+}
