@@ -1,4 +1,3 @@
-
 body{
     display: grid;
     background-color: white;
@@ -13,6 +12,7 @@ body{
                             "main"
                             "footer";
 }
+
 
 header{
     grid-area: header;
@@ -47,7 +47,7 @@ header a {
     text-decoration: none;
     color: white;
 }
-#year2{
+#validation{
     text-decoration: underline;
     color: white;
 }
@@ -65,7 +65,7 @@ header a {
     position: relative;
     text-decoration: none;
     left: 89%;
- 
+    
     font-size: 2em;
     font-family: 'Hubballi', cursive;
     bottom: 55px;
@@ -79,7 +79,10 @@ header a {
 #clicked:target .off {display: block;}
 /* Target the nav - so the nav turns on an off*/
 #clicked:target nav {display: none;}
-
+#validation{
+    text-decoration: underline;
+    color: white;
+}
 nav {
     grid-area: nav;
     background-color: black;
@@ -118,61 +121,34 @@ main {
     width: 100%;
     font-family: 'Hubballi', cursive;
     padding-bottom: 300px;
-    margin-left: -8px;
-    
+    margin-left: -8px;   
 }
 
 .maintext p{
     font-size: 1em;
     position: relative;
-    
-    left: 2%;
-    top: 10px;
-    
+    top: 2%;
+    left: 20%;
+    text-align: center;
     border: 2px solid white;
     width: 70%;
 }
+.fling-minislide {width:100%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
 
-.maintext p:nth-child(1) {
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:3s;}
+.fling-minislide img:nth-child(2){animation-delay:1s;}
+.fling-minislide img:nth-child(1){animation-delay:1s;}
+
+.fling-minislide {
+    border: 0.5px solid grey;
+    width: 80%;
     position: relative;
-    top: -40px;
-    font-size: 2em;
-   
-    
+    left: 15%;
+    top: 75px;
 }
-
-.maintext p:nth-child(2){
-    position: relative;
-    bottom: 80px;
-
-}
-.maintext p:nth-child(3){
-    position: relative;
-    bottom: 80px;
-}
-.maintext p:nth-child(4){
-    position: relative;
-    bottom: 80px;
-}
-.maintext p:nth-child(5){
-    position: relative;
-    bottom: 80px;
-}
-.maintext p:nth-child(6){
-    position: relative;
-    bottom: 80px;
-}
-
-
-
-
-#modules {
-    width: 350px;
-    position: relative;
-    left: 3%;
-}
-
-
 footer {
     grid-area: footer;
     width: 100%;
@@ -242,10 +218,8 @@ footer p{
     #oracle2 {
         width: 70px;
     }
-    
-
-    
-
+   
+  
 
     #instagram{
         width: 20px;

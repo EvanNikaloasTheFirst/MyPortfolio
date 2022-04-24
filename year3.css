@@ -146,23 +146,20 @@ main{
     position: relative;
     top: 300px;
     left: 5%;
-    
-    
-}
-.maintext p{
-
     font-family: 'Hubballi', cursive;
     color: black;
     position: relative;
-   
+    
+}
+#error{
+    position: relative;
+    left: 40%;
+    width: 1000px;
 }
 
-.maintext p:nth-child(1){
-   top: 50%;
-    left: 42%;
-    
-    font-size: 10em;
-}
+
+
+
 
 .maintext p:nth-child(2){
     position: relative;
@@ -170,7 +167,7 @@ main{
     top: -200px;
     border: 2px solid white;
     width: 70%;
-    margin-left: 12%;
+  left: 14%;
 }
 .maintext ul{
     font-size: 5em;

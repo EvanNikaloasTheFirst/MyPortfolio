@@ -18,7 +18,6 @@ header{
     width: 100vw;
     margin-left: -8px;
     margin-top: -8px;
-    padding-bottom: 1500px;
     font-family: 'Hubballi', cursive;
 }
 header h1{
@@ -27,7 +26,7 @@ header h1{
     text-align: center;
     color: white;
     position: relative;
-    bottom: 15%;
+    bottom: 25%;
 
 }
 header  a {
@@ -48,7 +47,7 @@ header a:hover{
     
 }
 
-#contact{
+#validation{
     text-decoration: underline;
     color: black;
 }
@@ -135,75 +134,30 @@ main{
 .maintext p{
     font-size: 10em;
     position: relative;
-    left: 30%;
-    top: 100px;
+    top: 2%;
+    left: 26%;
+    text-align: center;
+    border: 2px solid white;
+    width: 55%;
 }
+.fling-minislide {width:100%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
 
-form{
-    display: grid;
-    width: 25%;
-    left: 52%;
-    grid-template-columns:  100%;
-    align-items: center;
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:3s;}
+.fling-minislide img:nth-child(2){animation-delay:1s;}
+.fling-minislide img:nth-child(1){animation-delay:1s;}
+
+.fling-minislide {
+    border: 0.5px solid grey;
+    width: 60%;
     position: relative;
-    border: 3px solid white;
-    transform: scale(2.5);
-    top: 800px;
-    
+    left: 24%;
+    top: 75px;
 }
-#textarea{
-    background-color: black;
-    color: white;
-    border-color: black;
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-    height: 400px;
-    width: 800px;
-    resize: none;
-}
-#Names{
-    background-color: black;
-    color: white;
-    border-color: black;
 
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-}
-#submitbtn{
-    background-color: black;
-    color: white;
-    border-color: black;
 
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-}
-#firstname{
-    background-color: black;
-    color: white;
-    border-color: black;
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-    height: 100px;
-    width: 800px;
-}
-#lastname{
-    background-color: black;
-    color: white;
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-    height: 100px;
-    width: 800px;
-}
-#Query{
-    height: 100px;
-    width: 808px;
-    background-color: black;
-    color: white;
-}
-#submitbtn{
-    height: 50px;
-    width: 808px;
-}
 
 
 

@@ -65,7 +65,6 @@ header a {
     position: relative;
     text-decoration: none;
     left: 89%;
-    bottom: px;
     font-size: 2em;
     font-family: 'Hubballi', cursive;
     bottom: 55px;
@@ -79,10 +78,7 @@ header a {
 #clicked:target .off {display: block;}
 /* Target the nav - so the nav turns on an off*/
 #clicked:target nav {display: none;}
-#home{
-    text-decoration: underline;
-    color: grey;
-}
+
 nav {
     grid-area: nav;
     background-color: black;
@@ -124,10 +120,16 @@ main {
     margin-left: -8px;
 }
 
-.maintext p{
-    font-size: 3em;
+#error{
     position: relative;
-    left: 8%;   
+    width: 200px;
+    left: 25%;
+}
+
+.maintext p{
+    font-size: 1em;
+    position: relative;
+    left: 25%;   
 }
 
 

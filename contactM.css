@@ -47,10 +47,7 @@ header a {
     text-decoration: none;
     color: white;
 }
-#home{
-    text-decoration: underline;
-    color: white;
-}
+
 .shownav {
     content: url(burgericon.png);
     width: 45px;
@@ -65,7 +62,6 @@ header a {
     position: relative;
     text-decoration: none;
     left: 89%;
-    bottom: px;
     font-size: 2em;
     font-family: 'Hubballi', cursive;
     bottom: 55px;
@@ -79,9 +75,9 @@ header a {
 #clicked:target .off {display: block;}
 /* Target the nav - so the nav turns on an off*/
 #clicked:target nav {display: none;}
-#home{
+#contact{
     text-decoration: underline;
-    color: grey;
+    color: white;
 }
 nav {
     grid-area: nav;
