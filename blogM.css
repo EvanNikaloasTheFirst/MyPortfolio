@@ -1,0 +1,296 @@
+
+   
+body{
+    display: grid;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:    "header "
+                            "nav"
+                            "main"
+                            "footer";
+}
+
+
+header{
+    grid-area: header;
+    background-color: black;
+    width: 100%;
+
+    margin-left: -8px;
+
+    margin-top: -8px;
+    font-family: 'Hubballi', cursive;
+    height: 50%;
+    
+    
+}
+.hamburg li {
+    list-style-type: none;text-decoration: none;
+}
+#headshotMini{
+    width: 30px;
+    border-radius: 30%;
+   
+}
+header h1{
+    font-size: 2em;
+    font-family: 'Hubballi', cursive;
+    
+    text-align: center;
+    position: relative;
+    bottom: 5%;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+#blog{
+    text-decoration: underline;
+    color: white;
+}
+.shownav {
+    content: url(burgericon.png);
+    width: 45px;
+    position: relative;
+    left: 89%;
+    bottom: 55px;
+    filter: invert(100);
+    z-index: 1;
+  
+    }
+#hamburger{
+    position: relative;
+    text-decoration: none;
+    left: 89%;
+    bottom: px;
+    font-size: 2em;
+    font-family: 'Hubballi', cursive;
+    bottom: 55px;
+}
+/*When "an item" is clicked - show the menu */
+#clicked .on{display: block;}
+/*when its clicked again remove it */
+#clicked .off {display: none;}
+
+#clicked:target .on {display: none;}
+#clicked:target .off {display: block;}
+/* Target the nav - so the nav turns on an off*/
+#clicked:target nav {display: none;}
+#home{
+    text-decoration: underline;
+    color: grey;
+}
+nav {
+    grid-area: nav;
+    background-color: black;
+    font-family: 'Hubballi', cursive;
+    margin-left: -8px;
+    
+    display: block;
+    top: 0;
+    position:fixed;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+
+    z-index: 2;
+}
+
+.list{
+    font-size: 1em;
+    color: white;
+    position: relative;
+    right: 5%;
+    
+}
+    .list a {
+        text-decoration: none;
+        color: grey;
+        
+    }
+    .list ul li{
+        padding-top: 50px;
+        list-style-type: none;
+    }
+main {
+    grid-area: main;
+    background-color: white;
+    width: 100%;
+    font-family: 'Hubballi', cursive;
+    padding-bottom: 300px;
+    margin-left: -8px;
+}
+
+.maintext p{
+    font-size: 1em;
+}
+.maintext h1{
+    position: relative;
+    left: 5%;
+    font-weight: bolder;
+    background-color: grey;
+    width: fit-content;
+    border-radius: 5%;
+}
+.maintext p:nth-child(2){
+    position: relative;
+    left: 5%;
+    border: 2px solid white;
+    width: 80%;
+}
+.maintext p:nth-child(3){
+    position: relative;
+    left: 5%;
+    border: 2px solid white;
+    width: 80%;
+    font-weight: bolder;
+    background-color: grey;
+    width: fit-content;
+    border-radius: 5%;
+}
+
+#MarleyWP{
+    width:200px;
+    position: relative;
+    top: 75px;
+    left: 15%;
+    border-radius: 5%;
+}
+
+.Marley p:nth-child(2){
+    position: relative;
+    left: 5%;
+    bottom: 150px;
+    left: 5%;
+    border: 2px solid white;
+    width: 80%;
+}
+
+.currencyconverter p{
+    font-family: 'Hubballi', cursive;
+    font-size: 1em;
+    left: 5%;
+    position: relative;
+}
+
+.currencyconverter p:nth-child(1){
+   
+    border: 2px solid white;
+    left: 5%;
+    width: 80%;
+}
+
+#ccprogram{
+    width: 200px;
+    position: relative;
+    border-radius: 5%;
+    left: 15%;
+}
+
+.portfolio{
+    font-family: 'Hubballi', cursive;
+    font-size: 1em;
+    left: 5%;
+    position: relative; 
+}
+
+.portfolio p:nth-child(1){
+    left: 5%;
+    border: 2px solid white;
+    width: 80%;
+    
+}
+
+#pfdesign{
+width: 200px;
+position: relative;
+left: 12%;
+border-radius: 5%;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: white;
+    
+    margin-left: -8px;
+}
+
+footer p{
+    font-size:1em;
+    font-family: 'Hubballi', cursive;
+    color: black;
+    position: relative;
+    text-align: center;
+    top: 25%;
+    
+}
+.media{
+    
+    position: relative;
+    bottom: 40%;
+    right: 7%;
+    
+}
+.media li{
+    text-decoration: none;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.media ul  {
+    display:block;
+    padding-top: 100px;
+    position: relative;
+    font-size: 1.5em
+
+}
+
+.techStack{
+    position: relative;
+    text-align: center;
+    top: 15%;
+    }
+    
+    .techStack li{
+        display:block;
+        padding-top: 80px;
+        position: relative;
+    }
+    
+    .techStack ul{
+        list-style-type: none;
+    }
+
+    #java {
+        width: 70px;
+    }
+    #html2 {
+        width: 70px;
+    }
+    #css2 {
+        width: 70px;
+    }
+    #sql2 {
+        width: 70px;
+    }
+    #oracle2 {
+        width: 70px;
+    }
+   
+  
+
+    #instagram{
+        width: 20px;
+    }
+    #github{
+        width: 20px;
+    }
+    #linkedin{
+        width:20px;
+    }

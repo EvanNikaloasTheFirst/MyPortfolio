@@ -16,13 +16,13 @@ header{
     grid-area: header;
     background-color: black;
     width: 100%;
-    padding-bottom: 0em;
-    margin-left: -8px;
 
+    margin-left: -8px;
+padding-bottom: 40em;
     margin-top: -8px;
     font-family: 'Hubballi', cursive;
-    height: 67%;
-
+    height: 90%;
+    padding-top: 20px;
     
     
 }
@@ -54,7 +54,7 @@ header a:hover{
 }
 
 
-#year1{
+#year2{
     text-decoration: underline;
     color: black;
 }
@@ -83,7 +83,7 @@ nav{
     font-size: 3em;
     color: white;
     position: relative;
-    bottom:  25%;
+    top:  4%;
   
     
 }
@@ -137,118 +137,30 @@ main{
     padding-bottom: 1000px;
     margin-left: -8px;
 }
-.maintext p{
-    font-size: 5em;
-    position: relative;
-    top: 300px;
-    left: 5%;
-    
-    
-}
-.maintext p{
 
-    font-family: 'Hubballi', cursive;
-    color: black;
+.maintext p{
+    font-size: 4em;
     position: relative;
-   
+    top: 15%;
+    left: 15%;
+    text-align: center;
+    border: 2px solid white;
+    width: 70%;
 }
 
 .maintext p:nth-child(1){
-   top: -300px;
-    left: 42%;
-    
+    position: relative;
+    bottom: 50px;
     font-size: 10em;
+
 }
 
-.maintext p:nth-child(2){
+#modules{
     position: relative;
-    text-align: center;
-    top: -200px;
-    border: 2px solid white;
-    width: 70%;
-    margin-left: 12%;
-}
-.maintext ul{
-    font-size: 5em;
-    position: relative;
-    text-align: center;
-    top: -200px;
-    border: 2px solid white;
-    width: 40%;
-    margin-left: 28%;
-    list-style-type: none;
-    color: grey;
-}
-
-#dbms {
-    position: relative;
-    left: 12%;
-    top: 150px;
-    border-radius: 5%;
-    width: 1500px;
-}
-
-.SE1{
-    font-family: 'Hubballi', cursive;
-    color: black;
-    position: relative;
-    font-size: 4em;
-}
-
-.SE1 p:nth-child(2) {
-    position: relative;
-    left: 50%;
-    bottom: 830px;
-    border: 2px solid white;
-    width: 40%;
-}
-
-.programming{
-    font-family: 'Hubballi', cursive;
-    color: black;
-    position: relative;
-    font-size: 4em;
-}
-#ccprogram{
-    position: relative;
-    left: 12%;
-    bottom: 260px;
-    border-radius: 5%;
-    width: 1500px
+    left: 35%;
 }
 
 
-.programming p:nth-child(2){
-    position: relative;
-    left: 50%;
-    bottom: 830px;
-    border: 2px solid white;
-    width: 40%;
-}
-
-.webDev{
-    font-family: 'Hubballi', cursive;
-    color: black;
-    position: relative;
-    font-size: 4em;
-}
-
-#marley {
-    position: relative;
-    left: 12%;
-    bottom: 300px;
-    border-radius: 5%;
-    width: 1500px
-}
-
-.webDev p:nth-child(2){
-    position: relative;
-    left: 50%;
-    bottom: 1230px;
-    border: 2px solid white;
-    width: 40%;
-
-}
 
 footer{
     grid-area: footer;
@@ -287,7 +199,7 @@ footer p{
 
 .techStack{
 position: relative;
-margin-left: 25%;
+left:30%;
 top: 300px;
 }
 

@@ -15,16 +15,10 @@ body {
 header{
     grid-area: header;
     background-color: black;
-    width: 100%;
-    padding-bottom: 0em;
+    width: 100vw;
     margin-left: -8px;
-
     margin-top: -8px;
     font-family: 'Hubballi', cursive;
-    height: 67%;
-
-    
-    
 }
 header h1{
     font-size: 8em;
@@ -53,8 +47,7 @@ header a:hover{
     
 }
 
-
-#year1{
+#blog{
     text-decoration: underline;
     color: black;
 }
@@ -83,7 +76,7 @@ nav{
     font-size: 3em;
     color: white;
     position: relative;
-    bottom:  25%;
+    top: 10%;
   
     
 }
@@ -137,117 +130,98 @@ main{
     padding-bottom: 1000px;
     margin-left: -8px;
 }
+
 .maintext p{
     font-size: 5em;
     position: relative;
     top: 300px;
     left: 5%;
-    
-    
 }
-.maintext p{
 
-    font-family: 'Hubballi', cursive;
-    color: black;
+.maintext h1 {
     position: relative;
-   
-}
-
-.maintext p:nth-child(1){
-   top: -300px;
-    left: 42%;
-    
+    left: 48%;
+    bottom: 100px;
     font-size: 10em;
 }
 
 .maintext p:nth-child(2){
-    position: relative;
-    text-align: center;
-    top: -200px;
     border: 2px solid white;
-    width: 70%;
-    margin-left: 12%;
+    width:70%;
+    left: 17%;
+    top: -100px;
 }
-.maintext ul{
+
+.maintext p:nth-child(3){
+    border: 2px solid white;
+    width:70%;
+    left: 48%;
+    top: -100px;
+    
+}
+
+.currencyconverter p{
     font-size: 5em;
     position: relative;
-    text-align: center;
-    top: -200px;
-    border: 2px solid white;
-    width: 40%;
-    margin-left: 28%;
-    list-style-type: none;
-    color: grey;
+    left: 5%;
 }
 
-#dbms {
-    position: relative;
-    left: 12%;
-    top: 150px;
+.currencyconverter p:nth-child(1){
+    border: 2px solid white;
+    width:70%;
+    left: 17%;
+    top: 50px;
+}
+
+#MarleyWP {
     border-radius: 5%;
-    width: 1500px;
+    position: relative;
+    left: 30%;
+    width: 2500px;
+    top: 100px;
 }
 
-.SE1{
-    font-family: 'Hubballi', cursive;
-    color: black;
-    position: relative;
-    font-size: 4em;
-}
-
-.SE1 p:nth-child(2) {
-    position: relative;
-    left: 50%;
-    bottom: 830px;
-    border: 2px solid white;
-    width: 40%;
-}
-
-.programming{
-    font-family: 'Hubballi', cursive;
-    color: black;
-    position: relative;
-    font-size: 4em;
-}
 #ccprogram{
+    width: 2000px;
     position: relative;
-    left: 12%;
-    bottom: 260px;
+    left: 35%;
+    top: 120px;
     border-radius: 5%;
-    width: 1500px
 }
 
-
-.programming p:nth-child(2){
+.Marley p{
+    font-size: 5em;
     position: relative;
-    left: 50%;
-    bottom: 830px;
+    top: 300px;
+    left: 5%;
+}
+
+.Marley p:nth-child(2){
     border: 2px solid white;
-    width: 40%;
+    width:70%;
+    left: 17%;
+    top: -1700px;
 }
 
-.webDev{
-    font-family: 'Hubballi', cursive;
-    color: black;
+.portfolio p{
+    font-size: 5em;
     position: relative;
-    font-size: 4em;
+    left: 5%;
+    
 }
 
-#marley {
-    position: relative;
-    left: 12%;
-    bottom: 300px;
-    border-radius: 5%;
-    width: 1500px
-}
-
-.webDev p:nth-child(2){
-    position: relative;
-    left: 50%;
-    bottom: 1230px;
+.portfolio p:nth-child(1){
+    top: 100px;
     border: 2px solid white;
-    width: 40%;
+    width:70%;
+    left: 17%;
+}
 
+#pfdesign{
+    width: 2000px;
+    position: relative;
+    top: 200px;
+    left: 35%;
 }
 
 footer{
@@ -287,7 +261,7 @@ footer p{
 
 .techStack{
 position: relative;
-margin-left: 25%;
+left:30%;
 top: 300px;
 }
 

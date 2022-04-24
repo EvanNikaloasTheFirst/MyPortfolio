@@ -15,10 +15,16 @@ body {
 header{
     grid-area: header;
     background-color: black;
-    width: 100vw;
+    width: 100%;
+
     margin-left: -8px;
-    margin-top: -8px;
+
+  
     font-family: 'Hubballi', cursive;
+    height: 90%;
+    padding-top: 20px;
+    
+    
 }
 header h1{
     font-size: 8em;
@@ -46,6 +52,7 @@ header a:hover{
     list-style-type: none;
     
 }
+
 
 #home{
     text-decoration: underline;
@@ -76,7 +83,7 @@ nav{
     font-size: 3em;
     color: white;
     position: relative;
-    top: 10%;
+    top: .7%;
   
     
 }
@@ -92,6 +99,14 @@ nav{
 }
 .list a{
     text-decoration: none;
+}
+
+.list li:hover{
+    color: white;
+}
+
+.list a:visited{
+    color: black;
 }
 
 .list li:hover{

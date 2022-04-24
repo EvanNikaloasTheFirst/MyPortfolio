@@ -16,13 +16,13 @@ header{
     grid-area: header;
     background-color: black;
     width: 100%;
-    padding-bottom: 0em;
+
     margin-left: -8px;
 
-    margin-top: -8px;
+    
     font-family: 'Hubballi', cursive;
-    height: 67%;
-
+    height: 90%;
+    padding-top: 20px;
     
     
 }
@@ -32,7 +32,7 @@ header h1{
     text-align: center;
     color: white;
     position: relative;
-    bottom: 25%;
+    bottom: 21%;
 
 }
 header  a {
@@ -53,8 +53,7 @@ header a:hover{
     
 }
 
-
-#year1{
+#year3{
     text-decoration: underline;
     color: black;
 }
@@ -77,13 +76,17 @@ nav{
     text-decoration: none;
     font-family: 'Hubballi', cursive;
     margin-left: -8px;
+    top: 400px;
+    height: 90vh;
+    
+    
  
 }
 .list{
     font-size: 3em;
     color: white;
     position: relative;
-    bottom:  25%;
+
   
     
 }
@@ -135,6 +138,7 @@ main{
     width: 100vw;
     font-family: 'Hubballi', cursive;
     padding-bottom: 1000px;
+    padding-top: 500px;
     margin-left: -8px;
 }
 .maintext p{
@@ -154,7 +158,7 @@ main{
 }
 
 .maintext p:nth-child(1){
-   top: -300px;
+   top: 50%;
     left: 42%;
     
     font-size: 10em;
@@ -256,6 +260,7 @@ footer{
     width: 100vw;
     margin-left: -8px;
     padding-bottom: 1600px;
+    
 }
 
 footer p{
