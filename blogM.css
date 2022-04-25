@@ -2,7 +2,7 @@
    
 body{
     display: grid;
-    background-color: white;
+    background-image: url(iphoneWP.jpg);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -83,7 +83,8 @@ header a {
 
 nav {
     grid-area: nav;
-    background-color: black;
+    background-image: url(navbg.jpg);
+    background-repeat: no-repeat;
     font-family: 'Hubballi', cursive;
     margin-left: -8px;
     
@@ -106,7 +107,7 @@ nav {
 }
     .list a {
         text-decoration: none;
-        color: grey;
+        color: white;
         
     }
     .list ul li{
@@ -115,7 +116,7 @@ nav {
     }
 main {
     grid-area: main;
-    background-color: white;
+    color: white;
     width: 100%;
     font-family: 'Hubballi', cursive;
     padding-bottom: 300px;
@@ -134,24 +135,25 @@ main {
 .maintext p:nth-child(2){
     position: relative;
     left: 5%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 80%;
 }
 .maintext p:nth-child(3){
     position: relative;
     left: 5%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 80%;
     font-weight: bolder;
     width: fit-content;
     border-radius: 5%;
+    
 }
 
 #MarleyWP{
-    width:200px;
+    width:230px;
     position: relative;
     top: 75px;
-    left: 15%;
+    left: 5%;
     border-radius: 5%;
 }
 
@@ -160,7 +162,7 @@ main {
     left: 5%;
     bottom: 150px;
     left: 5%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 80%;
 }
 
@@ -173,16 +175,16 @@ main {
 
 .currencyconverter p:nth-child(1){
    
-    border: 2px solid white;
+    border: 2px solid transparent;
     left: 5%;
     width: 80%;
 }
 
 #ccprogram{
-    width: 200px;
+    width: 300px;
     position: relative;
     border-radius: 5%;
-    left: 15%;
+    left: 5%;
 }
 
 .portfolio{
@@ -194,22 +196,22 @@ main {
 
 .portfolio p:nth-child(1){
     left: 5%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 80%;
     
 }
 
 #pfdesign{
-width: 200px;
+width: 300px;
 position: relative;
-left: 12%;
+left: 5%;
 border-radius: 5%;
 }
 
 footer {
     grid-area: footer;
     width: 100%;
-    background-color: white;
+   
     
     margin-left: -8px;
 }
@@ -217,7 +219,7 @@ footer {
 footer p{
     font-size:1em;
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     text-align: center;
     top: 25%;

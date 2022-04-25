@@ -4,6 +4,7 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    background-image: url(desktopWP.JPG);
     grid-template-columns: auto;
     grid-template-rows: 3% 4% 70% 5%;
     grid-template-areas:"header header header"
@@ -72,7 +73,7 @@ header a:hover{
 
 nav{
     grid-area: nav;
-    background-color: white;
+   
     width: 100vw;
     text-decoration: none;
     font-family: 'Hubballi', cursive;
@@ -106,7 +107,7 @@ nav{
 }
 
 .list a:visited{
-    color: black;
+    color: white;
 }
 #instagram {
     width: 50px;
@@ -131,7 +132,7 @@ nav{
 
 main{
     grid-area: main;
-    background-color: white;
+    
     width: 100vw;
     font-family: 'Hubballi', cursive;
     padding-bottom: 1000px;
@@ -148,7 +149,7 @@ main{
 .maintext p{
 
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
    
 }
@@ -164,7 +165,7 @@ main{
     position: relative;
     text-align: center;
     top: -200px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 70%;
     margin-left: 12%;
 }
@@ -173,7 +174,7 @@ main{
     position: relative;
     text-align: center;
     top: -200px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 40%;
     margin-left: 28%;
     list-style-type: none;
@@ -190,7 +191,7 @@ main{
 
 .SE1{
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     font-size: 4em;
 }
@@ -199,13 +200,13 @@ main{
     position: relative;
     left: 50%;
     bottom: 830px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 40%;
 }
 
 .programming{
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     font-size: 4em;
 }
@@ -222,13 +223,13 @@ main{
     position: relative;
     left: 50%;
     bottom: 830px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 40%;
 }
 
 .webDev{
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     font-size: 4em;
 }
@@ -245,14 +246,13 @@ main{
     position: relative;
     left: 50%;
     bottom: 1230px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 40%;
 
 }
 
 footer{
     grid-area: footer;
-    background-color: grey;
     width: 100vw;
     margin-left: -8px;
     padding-bottom: 1600px;

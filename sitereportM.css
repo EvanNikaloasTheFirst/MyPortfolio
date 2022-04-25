@@ -1,6 +1,6 @@
 body{
     display: grid;
-    background-color: white;
+    background-image: url(iphoneWP.jpg);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -81,7 +81,8 @@ header a {
 
 nav {
     grid-area: nav;
-    background-color: black;
+    background-image: url(navbg.jpg);
+    background-repeat: no-repeat;
     font-family: 'Hubballi', cursive;
     margin-left: -8px;
     
@@ -104,7 +105,7 @@ nav {
 }
     .list a {
         text-decoration: none;
-        color: grey;
+        color: white;
         
     }
     .list ul li{
@@ -113,11 +114,12 @@ nav {
     }
 main {
     grid-area: main;
-    background-color: white;
+    
     width: 100%;
     font-family: 'Hubballi', cursive;
     padding-bottom: 600px;
     margin-left: -8px;
+    color: white;
 }
 .maintext h1{
     position: relative;
@@ -131,8 +133,9 @@ main {
     font-family: 'Hubballi', cursive;
     
     left: 5%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 80%;
+    bottom: 20px;
 }
 
 .maintext p:nth-child(4){
@@ -141,9 +144,9 @@ main {
     font-family: 'Hubballi', cursive;
     
     left: 5%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 80%;
-    bottom: 60px;
+    bottom: 37px;
 }
 
 .maintext p:nth-child(6){
@@ -151,7 +154,7 @@ main {
     font-size: 1em;
     font-family: 'Hubballi', cursive;
     left: 5%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 80%;
     bottom: 60px;
 }
@@ -160,7 +163,7 @@ main {
     font-size: 1em;
     font-family: 'Hubballi', cursive;
     left: 5%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 80%;
     bottom: 20px;
 }
@@ -170,7 +173,7 @@ main {
     top: 10px;
     font-family: 'Hubballi', cursive;
     left: 5%;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 80%;
     bottom: 20px;
 }
@@ -194,6 +197,7 @@ main {
     position: relative;
     left: 5%;
     border-radius: 5%;
+    bottom: 35px;
 }
 
 #draftOne{
@@ -229,7 +233,7 @@ main {
 footer {
     grid-area: footer;
     width: 100%;
-    background-color: white;
+    
     
     margin-left: -8px;
 }
@@ -237,7 +241,7 @@ footer {
 footer p{
     font-size:1em;
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     text-align: center;
     top: 25%;

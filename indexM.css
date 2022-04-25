@@ -1,8 +1,9 @@
 
    
 body{
+    background-image: url(iphoneWP.jpg);
     display: grid;
-    background-color: white;
+    background-color: grey;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -87,41 +88,42 @@ transition: transition 5s ease-in;}
 #clicked:target nav {display: none;
     transition: transition 5s ease-in;}
 
-nav {
-    grid-area: nav;
-    background-color: black;
-    font-family: 'Hubballi', cursive;
-    margin-left: -8px;
+    nav {
+        grid-area: nav;
+        background-image: url(navbg.jpg);
+        background-repeat: none;
+        font-family: 'Hubballi', cursive;
+        margin-left: -8px;
+        
+        display: block;
+        top: 0;
+        position:fixed;
+        right: 50%;
+        width: 50%;
+        height: 100%;
     
-    display: block;
-    top: 0;
-    position:fixed;
-    right: 50%;
-    width: 50%;
-    height: 100%;
-
-    z-index: 2;
-}
-
-.list{
-    font-size: 1em;
-    color: white;
-    position: relative;
-    right: 5%;
+        z-index: 2;
+    }
     
-}
-    .list a {
-        text-decoration: none;
-        color: grey;
+    .list{
+        font-size: 1em;
+        color: white;
+        position: relative;
+        right: 5%;
         
     }
+        .list a {
+            text-decoration: none;
+            color: white;
+            
+        }
     .list ul li{
         padding-top: 50px;
         list-style-type: none;
     }
 main {
     grid-area: main;
-    background-color: white;
+    
     width: 100%;
     font-family: 'Hubballi', cursive;
     padding-bottom: 300px;
@@ -134,6 +136,7 @@ main {
     position: relative;
     top: 300px;
     text-align: center;
+    color: white;
     
     
 }
@@ -167,7 +170,7 @@ button{
 footer {
     grid-area: footer;
     width: 100%;
-    background-color: white;
+    
     
     margin-left: -8px;
 }
@@ -175,7 +178,7 @@ footer {
 footer p{
     font-size:1em;
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     text-align: center;
     top: 25%;

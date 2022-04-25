@@ -4,6 +4,7 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    background-image: url(desktopWP.JPG);
     grid-template-columns: auto;
     grid-template-rows: 3% 4% 70% 5%;
     grid-template-areas:"header header header"
@@ -66,7 +67,7 @@ header a:hover{
 
 nav{
     grid-area: nav;
-    background-color: white;
+    
     width: 100vw;
     text-decoration: none;
     font-family: 'Hubballi', cursive;
@@ -100,7 +101,7 @@ nav{
 }
 
 .list a:visited{
-    color: black;
+    color: white;
 }
 #instagram {
     width: 50px;
@@ -125,11 +126,12 @@ nav{
 
 main{
     grid-area: main;
-    background-color: white;
+    
     width: 100vw;
     font-family: 'Hubballi', cursive;
     padding-bottom: 2600px;
     margin-left: -8px;
+    color: white;
 }
 
 
@@ -138,6 +140,7 @@ main{
         position: relative;
     top: 300px;
     left: 5%;
+   
 }
 
 .maintext h1 {
@@ -148,7 +151,7 @@ main{
 }
 
 .maintext p:nth-child(2){
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:70%;
     left: 17%;
     top: -600px;
@@ -161,7 +164,7 @@ main{
 }
 
 .maintext p:nth-child(4){
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:70%;
     left: 15%;
     top: -1600px;
@@ -174,7 +177,7 @@ main{
     bottom: 1350px;
 }
 .maintext p:nth-child(6){
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:70%;
     left: 15%;
     top: -950px;
@@ -189,7 +192,7 @@ bottom: 600px;
 
 .maintext p:nth-child(8){
     position: relative;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:70%;
     left: 15%;
     top: -550px;
@@ -202,7 +205,7 @@ bottom: 600px;
 }
 .maintext p:nth-child(10){
     position: relative;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:60%;
     left: 23%;
     top: -350px;
@@ -217,7 +220,7 @@ bottom: 600px;
 }
 footer{
     grid-area: footer;
-    background-color: grey;
+    
     width: 100vw;
     margin-left: -8px;
     padding-bottom: 1600px;

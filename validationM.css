@@ -1,6 +1,6 @@
 body{
     display: grid;
-    background-color: white;
+    background-image: url(iphoneWP.jpg);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -85,7 +85,8 @@ header a {
 }
 nav {
     grid-area: nav;
-    background-color: black;
+    background-image: url(navbg.jpg);
+    background-repeat: no-repeat;
     font-family: 'Hubballi', cursive;
     margin-left: -8px;
     
@@ -108,8 +109,9 @@ nav {
 }
     .list a {
         text-decoration: none;
-        color: grey;
+        color: white;
         
+    
     }
     .list ul li{
         padding-top: 50px;
@@ -117,11 +119,12 @@ nav {
     }
 main {
     grid-area: main;
-    background-color: white;
+    
     width: 100%;
     font-family: 'Hubballi', cursive;
     padding-bottom: 300px;
-    margin-left: -8px;   
+    margin-left: -8px;  
+    color: white; 
 }
 
 .maintext p{
@@ -130,7 +133,7 @@ main {
     top: 2%;
     left: 20%;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 70%;
 }
 .fling-minislide {width:100%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
@@ -155,7 +158,7 @@ main {
 .fling-minislide img:nth-child(1){animation-delay:3s;}
 
 .fling-minislide {
-    border: 0.5px solid grey;
+    border: 0.5px solid transparent;
     width: 80%;
     position: relative;
     left: 15%;
@@ -164,7 +167,7 @@ main {
 footer {
     grid-area: footer;
     width: 100%;
-    background-color: white;
+  
     
     margin-left: -8px;
 }
@@ -172,7 +175,7 @@ footer {
 footer p{
     font-size:1em;
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     text-align: center;
     top: 25%;

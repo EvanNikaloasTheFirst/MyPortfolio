@@ -1,7 +1,7 @@
 
 body{
     display: grid;
-    background-color: white;
+    background-image: url(iphoneWP.jpg);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -82,7 +82,8 @@ header a {
 
 nav {
     grid-area: nav;
-    background-color: black;
+    background-image: url(navbg.jpg);
+    background-repeat: no-repeat;
     font-family: 'Hubballi', cursive;
     margin-left: -8px;
     
@@ -105,7 +106,7 @@ nav {
 }
     .list a {
         text-decoration: none;
-        color: grey;
+        color: white;
         
     }
     .list ul li{
@@ -114,7 +115,7 @@ nav {
     }
 main {
     grid-area: main;
-    background-color: white;
+    
     width: 100%;
     font-family: 'Hubballi', cursive;
     padding-bottom: 300px;
@@ -128,8 +129,8 @@ main {
     
     left: 2%;
     top: 10px;
-    
-    border: 2px solid white;
+    color: white;
+    border: 2px solid transparent;
     width: 70%;
 }
 
@@ -176,7 +177,7 @@ main {
 footer {
     grid-area: footer;
     width: 100%;
-    background-color: white;
+    
     
     margin-left: -8px;
 }
@@ -184,7 +185,7 @@ footer {
 footer p{
     font-size:1em;
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     text-align: center;
     top: 25%;

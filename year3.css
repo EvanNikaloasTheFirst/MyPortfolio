@@ -3,6 +3,7 @@ body {
     display: grid;
     height: 100%;
     width: 100%;
+    background-image: url(desktopWP.JPG);
     overflow-x: hidden;
     grid-template-columns: auto;
     grid-template-rows: 3% 4% 70% 5%;
@@ -71,7 +72,7 @@ header a:hover{
 
 nav{
     grid-area: nav;
-    background-color: white;
+    
     width: 100vw;
     text-decoration: none;
     font-family: 'Hubballi', cursive;
@@ -110,7 +111,7 @@ nav{
 }
 
 .list a:visited{
-    color: black;
+    color: white;
 }
 #instagram {
     width: 50px;
@@ -135,7 +136,7 @@ nav{
 
 main{
     grid-area: main;
-    background-color: white;
+    
     width: 100vw;
     font-family: 'Hubballi', cursive;
     padding-bottom: 1000px;
@@ -148,7 +149,7 @@ main{
     top: 300px;
     left: 5%;
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     
 }
@@ -166,7 +167,7 @@ main{
     position: relative;
     text-align: center;
     top: -200px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 70%;
   left: 14%;
 }
@@ -247,14 +248,14 @@ main{
     position: relative;
     left: 50%;
     bottom: 1230px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width: 40%;
 
 }
 
 footer{
     grid-area: footer;
-    background-color: grey;
+   
     width: 100vw;
     margin-left: -8px;
     padding-bottom: 1600px;
