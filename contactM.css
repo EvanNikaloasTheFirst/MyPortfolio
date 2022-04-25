@@ -1,6 +1,6 @@
 body{
     display: grid;
-    background-color: white;
+    background-image: url(iphoneWP.jpg);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -47,10 +47,7 @@ header a {
     text-decoration: none;
     color: white;
 }
-#home{
-    text-decoration: underline;
-    color: white;
-}
+
 .shownav {
     content: url(burgericon.png);
     width: 45px;
@@ -65,7 +62,6 @@ header a {
     position: relative;
     text-decoration: none;
     left: 89%;
-    bottom: px;
     font-size: 2em;
     font-family: 'Hubballi', cursive;
     bottom: 55px;
@@ -79,13 +75,14 @@ header a {
 #clicked:target .off {display: block;}
 /* Target the nav - so the nav turns on an off*/
 #clicked:target nav {display: none;}
-#home{
+#contact{
     text-decoration: underline;
-    color: grey;
+    color: white;
 }
 nav {
     grid-area: nav;
-    background-color: black;
+    background-image: url(navbg.jpg);
+    background-repeat: no-repeat;
     font-family: 'Hubballi', cursive;
     margin-left: -8px;
     
@@ -108,7 +105,7 @@ nav {
 }
     .list a {
         text-decoration: none;
-        color: grey;
+        color: white;
         
     }
     .list ul li{
@@ -117,7 +114,7 @@ nav {
     }
 main {
     grid-area: main;
-    background-color: white;
+    
     width: 100%;
     font-family: 'Hubballi', cursive;
     padding-bottom: 300px;
@@ -128,6 +125,7 @@ main {
     font-size: 1em;
     position: relative;
     left: 10%;
+    color: white;
 }
 
 form{
@@ -137,7 +135,7 @@ form{
     grid-template-columns:  100%;
     align-items: center;
     position: relative;
-    border: 3px solid white;
+    border: 3px solid transparent;
     
 }
 
@@ -179,7 +177,7 @@ form{
 footer {
     grid-area: footer;
     width: 100%;
-    background-color: white;
+
     
     margin-left: -8px;
 }
@@ -187,7 +185,7 @@ footer {
 footer p{
     font-size:1em;
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     text-align: center;
     top: 25%;

@@ -1,9 +1,6 @@
-
-   
 body{
-    background-image: url(iphoneWP.jpg);
     display: grid;
-    background-color: grey;
+    background-image: url(iphoneWP.jpg);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -31,8 +28,7 @@ header{
     
 }
 .hamburg li {
-    list-style-type: none;
-    text-decoration: none;
+    list-style-type: none;text-decoration: none;
 }
 #headshotMini{
     width: 30px;
@@ -47,12 +43,11 @@ header h1{
     position: relative;
     bottom: 5%;
 }
-
 header a {
     text-decoration: none;
     color: white;
 }
-#home{
+#validation{
     text-decoration: underline;
     color: white;
 }
@@ -70,53 +65,54 @@ header a {
     position: relative;
     text-decoration: none;
     left: 89%;
+    
     font-size: 2em;
     font-family: 'Hubballi', cursive;
     bottom: 55px;
 }
 /*When "an item" is clicked - show the menu */
-#clicked .on{display: block;
-transition: transition 5s ease-in;}
+#clicked .on{display: block;}
 /*when its clicked again remove it */
 #clicked .off {display: none;}
 
-#clicked:target .on {display: none;
-    transition: transition 5s ease-in;}
-#clicked:target .off {display: block;
-    transition: transition 5s ease-in;}
+#clicked:target .on {display: none;}
+#clicked:target .off {display: block;}
 /* Target the nav - so the nav turns on an off*/
-#clicked:target nav {display: none;
-    transition: transition 5s ease-in;}
+#clicked:target nav {display: none;}
+#validation{
+    text-decoration: underline;
+    color: white;
+}
+nav {
+    grid-area: nav;
+    background-image: url(navbg.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Hubballi', cursive;
+    margin-left: -8px;
+    
+    display: block;
+    top: 0;
+    position:fixed;
+    right: 50%;
+    width: 50%;
+    height: 100%;
 
-    nav {
-        grid-area: nav;
-        background-image: url(navbg.jpg);
-        background-repeat: none;
-        font-family: 'Hubballi', cursive;
-        margin-left: -8px;
-        
-        display: block;
-        top: 0;
-        position:fixed;
-        right: 50%;
-        width: 50%;
-        height: 100%;
+    z-index: 2;
+}
+
+.list{
+    font-size: 1em;
+    color: white;
+    position: relative;
+    right: 5%;
     
-        z-index: 2;
-    }
-    
-    .list{
-        font-size: 1em;
+}
+    .list a {
+        text-decoration: none;
         color: white;
-        position: relative;
-        right: 5%;
         
+    
     }
-        .list a {
-            text-decoration: none;
-            color: white;
-            
-        }
     .list ul li{
         padding-top: 50px;
         list-style-type: none;
@@ -127,50 +123,51 @@ main {
     width: 100%;
     font-family: 'Hubballi', cursive;
     padding-bottom: 300px;
-    margin-left: -8px;
-    
-    
+    margin-left: -8px;  
+    color: white; 
 }
+
 .maintext p{
-    font-size: 2em;
-    position: relative;
-    top: 300px;
-    text-align: center;
-    color: white;
-    
-    
-}
-#headshot{
-    position: relative;
-    left: 20%;
-    bottom: 200px;
-    border-radius: 5%;
-    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
-}
-
-button{
     font-size: 1em;
-    text-decoration:none;
-    border-radius:5px;
-    border:solid 1px black;
-    background: grey;
-    text-align:center;
-    padding:16px 18px 14px;
-    transition: all 0.1s;
-    font-family: 'Hubballi', cursive;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
     position: relative;
-    left: 35%;
-    top: 50px;
-    font-weight: bolder;
+    top: 2%;
+    left: 20%;
+    text-align: center;
+    border: 2px solid transparent;
+    width: 70%;
 }
+.fling-minislide {width:100%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
 
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(416){animation-delay:3s;}
+.fling-minislide img:nth-child(15){animation-delay:3s;}
+.fling-minislide img:nth-child(14){animation-delay:3s;}
+.fling-minislide img:nth-child(13){animation-delay:3s;}
+.fling-minislide img:nth-child(12){animation-delay:3s;}
+.fling-minislide img:nth-child(11){animation-delay:3s;}
+.fling-minislide img:nth-child(10){animation-delay:3s;}
+.fling-minislide img:nth-child(9){animation-delay:3s;}
+.fling-minislide img:nth-child(8){animation-delay:3s;}
+.fling-minislide img:nth-child(7){animation-delay:3s;}
+.fling-minislide img:nth-child(6){animation-delay:3s;}
+.fling-minislide img:nth-child(5){animation-delay:3s;}
+.fling-minislide img:nth-child(4){animation-delay:3s;}
+.fling-minislide img:nth-child(3){animation-delay:3s;}
+.fling-minislide img:nth-child(2){animation-delay:3s;}
+.fling-minislide img:nth-child(1){animation-delay:3s;}
+
+.fling-minislide {
+    border: 0.5px solid transparent;
+    width: 80%;
+    position: relative;
+    left: 15%;
+    top: 75px;
+}
 footer {
     grid-area: footer;
     width: 100%;
-    
+  
     
     margin-left: -8px;
 }
@@ -236,10 +233,8 @@ footer p{
     #oracle2 {
         width: 70px;
     }
-    
-
-    
-
+   
+  
 
     #instagram{
         width: 20px;

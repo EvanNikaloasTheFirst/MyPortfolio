@@ -1,9 +1,6 @@
-
-   
 body{
-    background-image: url(iphoneWP.jpg);
     display: grid;
-    background-color: grey;
+    background-image: url(iphoneWP.jpg);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -31,8 +28,7 @@ header{
     
 }
 .hamburg li {
-    list-style-type: none;
-    text-decoration: none;
+    list-style-type: none;text-decoration: none;
 }
 #headshotMini{
     width: 30px;
@@ -47,12 +43,11 @@ header h1{
     position: relative;
     bottom: 5%;
 }
-
 header a {
     text-decoration: none;
     color: white;
 }
-#home{
+#sitereport{
     text-decoration: underline;
     color: white;
 }
@@ -75,48 +70,44 @@ header a {
     bottom: 55px;
 }
 /*When "an item" is clicked - show the menu */
-#clicked .on{display: block;
-transition: transition 5s ease-in;}
+#clicked .on{display: block;}
 /*when its clicked again remove it */
 #clicked .off {display: none;}
 
-#clicked:target .on {display: none;
-    transition: transition 5s ease-in;}
-#clicked:target .off {display: block;
-    transition: transition 5s ease-in;}
+#clicked:target .on {display: none;}
+#clicked:target .off {display: block;}
 /* Target the nav - so the nav turns on an off*/
-#clicked:target nav {display: none;
-    transition: transition 5s ease-in;}
+#clicked:target nav {display: none;}
 
-    nav {
-        grid-area: nav;
-        background-image: url(navbg.jpg);
-        background-repeat: none;
-        font-family: 'Hubballi', cursive;
-        margin-left: -8px;
-        
-        display: block;
-        top: 0;
-        position:fixed;
-        right: 50%;
-        width: 50%;
-        height: 100%;
+nav {
+    grid-area: nav;
+    background-image: url(navbg.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Hubballi', cursive;
+    margin-left: -8px;
     
-        z-index: 2;
-    }
+    display: block;
+    top: 0;
+    position:fixed;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+
+    z-index: 2;
+}
+
+.list{
+    font-size: 1em;
+    color: white;
+    position: relative;
+    right: 5%;
     
-    .list{
-        font-size: 1em;
+}
+    .list a {
+        text-decoration: none;
         color: white;
-        position: relative;
-        right: 5%;
         
     }
-        .list a {
-            text-decoration: none;
-            color: white;
-            
-        }
     .list ul li{
         padding-top: 50px;
         list-style-type: none;
@@ -126,46 +117,118 @@ main {
     
     width: 100%;
     font-family: 'Hubballi', cursive;
-    padding-bottom: 300px;
+    padding-bottom: 600px;
     margin-left: -8px;
-    
-    
-}
-.maintext p{
-    font-size: 2em;
-    position: relative;
-    top: 300px;
-    text-align: center;
     color: white;
-    
-    
 }
-#headshot{
+.maintext h1{
     position: relative;
-    left: 20%;
-    bottom: 200px;
-    border-radius: 5%;
-    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+    font-size: 2em;
+    font-family: 'Hubballi', cursive;
+    left: 5%;
+}
+.maintext p:nth-child(2){
+    position: relative;
+    font-size: 1em;
+    font-family: 'Hubballi', cursive;
+    
+    left: 5%;
+    border: 2px solid transparent;
+    width: 80%;
+    bottom: 20px;
 }
 
-button{
-    font-size: 1em;
-    text-decoration:none;
-    border-radius:5px;
-    border:solid 1px black;
-    background: grey;
-    text-align:center;
-    padding:16px 18px 14px;
-    transition: all 0.1s;
-    font-family: 'Hubballi', cursive;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+.maintext p:nth-child(4){
     position: relative;
-    left: 35%;
-    top: 50px;
-    font-weight: bolder;
+    font-size: 1em;
+    font-family: 'Hubballi', cursive;
+    
+    left: 5%;
+    border: 2px solid transparent;
+    width: 80%;
+    bottom: 37px;
 }
+
+.maintext p:nth-child(6){
+    position: relative;
+    font-size: 1em;
+    font-family: 'Hubballi', cursive;
+    left: 5%;
+    border: 2px solid transparent;
+    width: 80%;
+    bottom: 60px;
+}
+.maintext p:nth-child(8){
+    position: relative;
+    font-size: 1em;
+    font-family: 'Hubballi', cursive;
+    left: 5%;
+    border: 2px solid transparent;
+    width: 80%;
+    bottom: 20px;
+}
+.maintext p:nth-child(10){
+    position: relative;
+    font-size: 1em;
+    top: 10px;
+    font-family: 'Hubballi', cursive;
+    left: 5%;
+    border: 2px solid transparent;
+    width: 80%;
+    bottom: 20px;
+}
+
+#ss {
+    width:80%;
+    position: relative;
+    left: 5%;
+}
+
+#grid{
+    width: 200px;
+    position: relative;
+    left: 5%;
+    bottom: 50px;
+    border-radius: 5%;
+}
+
+#week1{
+    width: 80%;
+    position: relative;
+    left: 5%;
+    border-radius: 5%;
+    bottom: 35px;
+}
+
+#draftOne{
+    width: 200px;
+    position: relative;
+    left: 5%;
+    bottom: 30px;
+    border-radius: 5%;
+}
+
+#oldmobiledesign{
+    width: 200px;
+    position: relative;
+    left: 5%;
+    border-radius: 5%;
+}
+#newDesign{
+    width: 250px;
+    border-radius: 5%;
+    position: relative;
+    left: 5%;
+}
+
+#repo{
+    width: 200px;
+    border-radius: 5%;
+    position: relative;
+    top: 50px;
+    left: 1%;
+}
+
 
 footer {
     grid-area: footer;
@@ -236,10 +299,8 @@ footer p{
     #oracle2 {
         width: 70px;
     }
-    
-
-    
-
+   
+  
 
     #instagram{
         width: 20px;

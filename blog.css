@@ -4,6 +4,7 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    background-image: url(desktopWP.JPG);
     grid-template-columns: auto;
     grid-template-rows: 3% 4% 70% 5%;
     grid-template-areas:"header header header"
@@ -19,6 +20,7 @@ header{
     margin-left: -8px;
     margin-top: -8px;
     font-family: 'Hubballi', cursive;
+    height: 8.3vh;
 }
 header h1{
     font-size: 8em;
@@ -26,7 +28,7 @@ header h1{
     text-align: center;
     color: white;
     position: relative;
-    bottom: 25%;
+    bottom: 20%;
 
 }
 header  a {
@@ -65,7 +67,6 @@ header a:hover{
 
 nav{
     grid-area: nav;
-    background-color: white;
     width: 100vw;
     text-decoration: none;
     font-family: 'Hubballi', cursive;
@@ -76,7 +77,7 @@ nav{
     font-size: 3em;
     color: white;
     position: relative;
-    top: 10%;
+    bottom:  15%;
   
     
 }
@@ -99,7 +100,7 @@ nav{
 }
 
 .list a:visited{
-    color: black;
+    color: white;
 }
 #instagram {
     width: 50px;
@@ -124,11 +125,11 @@ nav{
 
 main{
     grid-area: main;
-    background-color: white;
     width: 100vw;
     font-family: 'Hubballi', cursive;
     padding-bottom: 1000px;
     margin-left: -8px;
+    color: white;
 }
 
 .maintext p{
@@ -141,19 +142,20 @@ main{
 .maintext h1 {
     position: relative;
     left: 48%;
-    bottom: 100px;
+    bottom: 170px;
     font-size: 10em;
+    color: white;
 }
 
 .maintext p:nth-child(2){
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:70%;
     left: 17%;
     top: -100px;
 }
 
 .maintext p:nth-child(3){
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:70%;
     left: 48%;
     top: -100px;
@@ -164,10 +166,11 @@ main{
     font-size: 5em;
     position: relative;
     left: 5%;
+    color: white;
 }
 
 .currencyconverter p:nth-child(1){
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:70%;
     left: 17%;
     top: 50px;
@@ -194,10 +197,11 @@ main{
     position: relative;
     top: 300px;
     left: 5%;
+    color: white;
 }
 
 .Marley p:nth-child(2){
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:70%;
     left: 17%;
     top: -1700px;
@@ -207,12 +211,13 @@ main{
     font-size: 5em;
     position: relative;
     left: 5%;
+    color: white;
     
 }
 
 .portfolio p:nth-child(1){
     top: 100px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     width:70%;
     left: 17%;
 }

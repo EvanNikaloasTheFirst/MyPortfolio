@@ -1,7 +1,7 @@
 
 body{
     display: grid;
-    background-color: white;
+    background-image: url(iphoneWP.jpg);
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -65,7 +65,7 @@ header a {
     position: relative;
     text-decoration: none;
     left: 89%;
-    bottom: px;
+ 
     font-size: 2em;
     font-family: 'Hubballi', cursive;
     bottom: 55px;
@@ -79,13 +79,11 @@ header a {
 #clicked:target .off {display: block;}
 /* Target the nav - so the nav turns on an off*/
 #clicked:target nav {display: none;}
-#home{
-    text-decoration: underline;
-    color: grey;
-}
+
 nav {
     grid-area: nav;
-    background-color: black;
+    background-image: url(navbg.jpg);
+    background-repeat: no-repeat;
     font-family: 'Hubballi', cursive;
     margin-left: -8px;
     
@@ -108,7 +106,7 @@ nav {
 }
     .list a {
         text-decoration: none;
-        color: grey;
+        color: white;
         
     }
     .list ul li{
@@ -117,7 +115,7 @@ nav {
     }
 main {
     grid-area: main;
-    background-color: white;
+    
     width: 100%;
     font-family: 'Hubballi', cursive;
     padding-bottom: 300px;
@@ -128,22 +126,26 @@ main {
 .maintext p{
     font-size: 1em;
     position: relative;
-    top: 2%;
-    left: 15%;
-    text-align: center;
-    border: 2px solid white;
+    
+    left: 2%;
+    top: 10px;
+    color: white;
+    border: 2px solid transparent;
     width: 70%;
 }
 
 .maintext p:nth-child(1) {
     position: relative;
-    bottom: 50px;
+    top: -40px;
     font-size: 2em;
+   
+    
 }
 
 .maintext p:nth-child(2){
     position: relative;
     bottom: 80px;
+
 }
 .maintext p:nth-child(3){
     position: relative;
@@ -175,7 +177,7 @@ main {
 footer {
     grid-area: footer;
     width: 100%;
-    background-color: white;
+    
     
     margin-left: -8px;
 }
@@ -183,7 +185,7 @@ footer {
 footer p{
     font-size:1em;
     font-family: 'Hubballi', cursive;
-    color: black;
+    color: white;
     position: relative;
     text-align: center;
     top: 25%;

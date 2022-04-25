@@ -19,8 +19,8 @@ header{
     width: 100vw;
     margin-left: -8px;
     margin-top: -8px;
-   
     font-family: 'Hubballi', cursive;
+    height: 8.4vh;
 }
 header h1{
     font-size: 8em;
@@ -28,7 +28,7 @@ header h1{
     text-align: center;
     color: white;
     position: relative;
-    bottom: 50px;
+    bottom: 18%;
 
 }
 header  a {
@@ -49,7 +49,7 @@ header a:hover{
     
 }
 
-#contact{
+#sitereport{
     text-decoration: underline;
     color: black;
 }
@@ -72,15 +72,13 @@ nav{
     text-decoration: none;
     font-family: 'Hubballi', cursive;
     margin-left: -8px;
-    padding-bottom: 300px;
  
 }
 .list{
     font-size: 3em;
     color: white;
     position: relative;
-    top:50px;
-    
+    bottom: 42%;
   
     
 }
@@ -128,92 +126,101 @@ nav{
 
 main{
     grid-area: main;
-   
+    
     width: 100vw;
     font-family: 'Hubballi', cursive;
-    padding-bottom: 1000px;
+    padding-bottom: 2600px;
     margin-left: -8px;
+    color: white;
 }
+
 
 .maintext p{
+    font-size: 5em;
+        position: relative;
+    top: 300px;
+    left: 5%;
+   
+}
+
+.maintext h1 {
+    position: relative;
+    left: 43%;
+    bottom: 750px;
     font-size: 10em;
+}
+
+.maintext p:nth-child(2){
+    border: 2px solid transparent;
+    width:70%;
+    left: 17%;
+    top: -600px;
+}
+#week1 {
     position: relative;
-    left: 30%;
+    left: 15%;
+    width:70%;
+    bottom: 600px;
+}
+
+.maintext p:nth-child(4){
+    border: 2px solid transparent;
+    width:70%;
+    left: 15%;
+    top: -1600px;
+}
+
+#grid{
+    position: relative;
+    width: 2000px;
+    left: 34%;
+    bottom: 1350px;
+}
+.maintext p:nth-child(6){
+    border: 2px solid transparent;
+    width:70%;
+    left: 15%;
+    top: -950px;
+}
+#draftOne{
+width: 1200px;
+border-radius: 5%;
+position: relative;
+left: 42%;
+bottom: 600px;
+}
+
+.maintext p:nth-child(8){
+    position: relative;
+    border: 2px solid transparent;
+    width:70%;
+    left: 15%;
+    top: -550px;
+}
+
+#oldmobiledesign{
+    position: relative;
+    left: 45%;
+    bottom:400px;
+}
+.maintext p:nth-child(10){
+    position: relative;
+    border: 2px solid transparent;
+    width:60%;
+    left: 23%;
+    top: -350px;
+}
+
+
+#ss{
+    position: relative;
+    width: 60%;
+    left: 20%;
     bottom: 100px;
-    color: white;
 }
-
-form{
-    display: grid;
-    width: 25%;
-    left: 52%;
-    grid-template-columns:  100%;
-    align-items: center;
-    position: relative;
-    border: 3px solid transparent;
-    transform: scale(2.5);
-    top: 800px;
-    
-}
-#textarea{
-    background-color: black;
-    color: white;
-    border-color: black;
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-    height: 400px;
-    width: 800px;
-    resize: none;
-}
-#Names{
-    background-color: black;
-    color: white;
-    border-color: black;
-
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-}
-#submitbtn{
-    background-color: black;
-    color: white;
-    border-color: black;
-
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-}
-#firstname{
-    background-color: black;
-    color: white;
-    border-color: black;
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-    height: 100px;
-    width: 800px;
-}
-#lastname{
-    background-color: black;
-    color: white;
-    font-size: 25px;
-    font-family:  'PT Sans', sans-serif;
-    height: 100px;
-    width: 800px;
-}
-#Query{
-    height: 100px;
-    width: 808px;
-    background-color: black;
-    color: white;
-}
-#submitbtn{
-    height: 50px;
-    width: 808px;
-}
-
-
-
 footer{
     grid-area: footer;
-    background-color: grey;
+    
     width: 100vw;
     margin-left: -8px;
     padding-bottom: 1600px;
