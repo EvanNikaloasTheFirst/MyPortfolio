@@ -22,7 +22,7 @@ header{
     
     font-family: 'Hubballi', cursive;
     height: 90%;
-    padding-top: 20px;
+    padding-top: 5px;
     
     
 }
@@ -32,7 +32,7 @@ header h1{
     text-align: center;
     color: white;
     position: relative;
-    bottom: 21%;
+    bottom: 28%;
 
 }
 header  a {
@@ -86,6 +86,7 @@ nav{
     font-size: 3em;
     color: white;
     position: relative;
+    bottom: 20px;
 
   
     

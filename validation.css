@@ -76,7 +76,7 @@ nav{
     font-size: 3em;
     color: white;
     position: relative;
-    top: 10%;
+    top: 5%;
   
     
 }
@@ -144,10 +144,22 @@ main{
 .fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
 
 @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
-.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(416){animation-delay:3s;}
+.fling-minislide img:nth-child(15){animation-delay:3s;}
+.fling-minislide img:nth-child(14){animation-delay:3s;}
+.fling-minislide img:nth-child(13){animation-delay:3s;}
+.fling-minislide img:nth-child(12){animation-delay:3s;}
+.fling-minislide img:nth-child(11){animation-delay:3s;}
+.fling-minislide img:nth-child(10){animation-delay:3s;}
+.fling-minislide img:nth-child(9){animation-delay:3s;}
+.fling-minislide img:nth-child(8){animation-delay:3s;}
+.fling-minislide img:nth-child(7){animation-delay:3s;}
+.fling-minislide img:nth-child(6){animation-delay:3s;}
+.fling-minislide img:nth-child(5){animation-delay:3s;}
+.fling-minislide img:nth-child(4){animation-delay:3s;}
 .fling-minislide img:nth-child(3){animation-delay:3s;}
-.fling-minislide img:nth-child(2){animation-delay:1s;}
-.fling-minislide img:nth-child(1){animation-delay:1s;}
+.fling-minislide img:nth-child(2){animation-delay:3s;}
+.fling-minislide img:nth-child(1){animation-delay:3s;}
 
 .fling-minislide {
     border: 0.5px solid grey;

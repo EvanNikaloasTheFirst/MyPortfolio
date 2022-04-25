@@ -19,6 +19,7 @@ header{
     margin-left: -8px;
     margin-top: -8px;
     font-family: 'Hubballi', cursive;
+    height: 8.3vh;
 }
 header h1{
     font-size: 8em;
@@ -26,7 +27,7 @@ header h1{
     text-align: center;
     color: white;
     position: relative;
-    bottom: 25%;
+    bottom: 20%;
 
 }
 header  a {
@@ -76,7 +77,7 @@ nav{
     font-size: 3em;
     color: white;
     position: relative;
-    top: 10%;
+    bottom:  15%;
   
     
 }
@@ -141,7 +142,7 @@ main{
 .maintext h1 {
     position: relative;
     left: 48%;
-    bottom: 100px;
+    bottom: 170px;
     font-size: 10em;
 }
 

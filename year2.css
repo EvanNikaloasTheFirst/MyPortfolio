@@ -32,7 +32,7 @@ header h1{
     text-align: center;
     color: white;
     position: relative;
-    bottom: 25%;
+    bottom: 38%;
 
 }
 header  a {
@@ -150,7 +150,7 @@ main{
 
 .maintext p:nth-child(1){
     position: relative;
-    bottom: 50px;
+    bottom: 70px;
     font-size: 10em;
 
 }

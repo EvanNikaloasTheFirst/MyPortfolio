@@ -74,14 +74,18 @@ header a {
     bottom: 55px;
 }
 /*When "an item" is clicked - show the menu */
-#clicked .on{display: block;}
+#clicked .on{display: block;
+transition: transition 5s ease-in;}
 /*when its clicked again remove it */
 #clicked .off {display: none;}
 
-#clicked:target .on {display: none;}
-#clicked:target .off {display: block;}
+#clicked:target .on {display: none;
+    transition: transition 5s ease-in;}
+#clicked:target .off {display: block;
+    transition: transition 5s ease-in;}
 /* Target the nav - so the nav turns on an off*/
-#clicked:target nav {display: none;}
+#clicked:target nav {display: none;
+    transition: transition 5s ease-in;}
 
 nav {
     grid-area: nav;
