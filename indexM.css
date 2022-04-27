@@ -88,6 +88,30 @@ transition: transition 5s ease-in;}
 #clicked:target nav {display: none;
     transition: transition 5s ease-in;}
 
+    @keyframes slide-in {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-back {
+        0% {
+            opacity: 0;
+            transform: translateX(250px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
     nav {
         grid-area: nav;
         background-image: url(navbg.jpg);
@@ -103,6 +127,7 @@ transition: transition 5s ease-in;}
         height: 100%;
     
         z-index: 2;
+        animation: slide-in 1s ease 0s 1 normal none;
     }
     
     .list{
