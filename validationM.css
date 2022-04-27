@@ -83,6 +83,29 @@ header a {
     text-decoration: underline;
     color: white;
 }
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-back {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 nav {
     grid-area: nav;
     background-image: url(navbg.jpg);
@@ -96,7 +119,7 @@ nav {
     right: 50%;
     width: 50%;
     height: 100%;
-
+    animation: slide-in 1s ease 0s 1 normal none;
     z-index: 2;
 }
 

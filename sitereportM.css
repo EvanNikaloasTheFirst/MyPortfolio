@@ -78,6 +78,29 @@ header a {
 #clicked:target .off {display: block;}
 /* Target the nav - so the nav turns on an off*/
 #clicked:target nav {display: none;}
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-back {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 nav {
     grid-area: nav;
@@ -92,7 +115,7 @@ nav {
     right: 50%;
     width: 50%;
     height: 100%;
-
+    animation: slide-in 1s ease 0s 1 normal none;
     z-index: 2;
 }
 
