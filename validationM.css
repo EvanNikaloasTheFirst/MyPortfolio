@@ -98,12 +98,12 @@ header a {
 @keyframes slide-back {
     0% {
         opacity: 0;
-        transform: translateX(250px);
+        transform: translateX(0);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(250px);
     }
 }
 nav {
@@ -120,6 +120,7 @@ nav {
     width: 50%;
     height: 100%;
     animation: slide-in 1s ease 0s 1 normal none;
+    animation: slide-back 1s ease 0s 1 normal none;
     z-index: 2;
 }
 

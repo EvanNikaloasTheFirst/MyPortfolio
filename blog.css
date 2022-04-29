@@ -20,7 +20,7 @@ header{
     margin-left: -8px;
     margin-top: -8px;
     font-family: 'Hubballi', cursive;
-    height: 8.3vh;
+    height: 6.3vh;
 }
 header h1{
     font-size: 8em;
@@ -231,7 +231,6 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: grey;
     width: 100vw;
     margin-left: -8px;
     padding-bottom: 1600px;

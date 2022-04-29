@@ -75,10 +75,11 @@ header a {
     bottom: 55px;
 }
 /*When "an item" is clicked - show the menu */
-#clicked .on{display: block;
-transition: transition 5s ease-in;}
+
 /*when its clicked again remove it */
 #clicked .off {display: none;}
+#clicked .on{display: block;
+    transition: transition 5s ease-in;}
 
 #clicked:target .on {display: none;
     transition: transition 5s ease-in;}
@@ -167,7 +168,7 @@ main {
 }
 #headshot{
     position: relative;
-    left: 20%;
+    left: 40%;
     bottom: 200px;
     border-radius: 5%;
     box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
