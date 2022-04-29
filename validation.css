@@ -143,7 +143,8 @@ main{
     width: 55%;
 }
 .fling-minislide {width:100%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
-.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+.fling-minislide img{ position:relative; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;
+}
 
 @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
 .fling-minislide img:nth-child(416){animation-delay:3s;}

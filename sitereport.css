@@ -20,7 +20,7 @@ header{
     margin-left: -8px;
     margin-top: -8px;
     font-family: 'Hubballi', cursive;
-    height: 8.4vh;
+    height: 6.4vh;
 }
 header h1{
     font-size: 8em;
@@ -129,7 +129,7 @@ main{
     
     width: 100vw;
     font-family: 'Hubballi', cursive;
-    padding-bottom: 2600px;
+    padding-bottom: 500px;
     margin-left: -8px;
     color: white;
 }
@@ -138,7 +138,7 @@ main{
 .maintext p{
     font-size: 5em;
         position: relative;
-    top: 300px;
+    top: 500px;
     left: 5%;
    
 }
@@ -174,7 +174,7 @@ main{
     position: relative;
     width: 2000px;
     left: 34%;
-    bottom: 1350px;
+    bottom: 950px;
 }
 .maintext p:nth-child(6){
     border: 2px solid transparent;
@@ -232,7 +232,7 @@ footer p{
     color: white;
     position: relative;
     text-align: center;
-    top: 900px;
+    top: 2800px;
 }
 
 .media li {
@@ -240,7 +240,7 @@ footer p{
     padding-left: 100px;
     position: relative;
     left: 45%;
-    top: 600px;
+    top: 2500px;
     font-size: 1.5em
 
 }
@@ -256,7 +256,7 @@ footer p{
 .techStack{
 position: relative;
 left:30%;
-top: 300px;
+top: 2500px;
 }
 
 .techStack li{

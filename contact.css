@@ -19,7 +19,7 @@ header{
     width: 100vw;
     margin-left: -8px;
     margin-top: -8px;
-   
+   height: 6.2vh;
     font-family: 'Hubballi', cursive;
 }
 header h1{
@@ -213,7 +213,7 @@ form{
 
 footer{
     grid-area: footer;
-    background-color: grey;
+  
     width: 100vw;
     margin-left: -8px;
     padding-bottom: 1600px;
