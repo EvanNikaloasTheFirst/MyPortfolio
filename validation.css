@@ -1,147 +1,119 @@
-body {
-    
-    display: grid;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    background-image: url(desktopWP.JPG);
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image:url(desktopWP.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-template-columns: auto;
-    grid-template-rows: 3% 4% 70% 5%;
-    grid-template-areas:"header header header"
-                            "nav nav nav"
-                            "main main main"
-                        "footer footer footer";
+    grid-template-rows: 10% 15% auto 5%;
+    grid-template-areas: "header"
+                            "nav"
+                            "main"
+                            "footer";
 }
 
 header{
-    grid-area: header;
-    background-color: black;
-    width: 100vw;
-    margin-left: -8px;
-    margin-top: -8px;
+    grid-area:header;
+    color: white;
     font-family: 'Hubballi', cursive;
-}
-header h1{
-    font-size: 8em;
-    font-family: 'Hubballi', cursive;
-    text-align: center;
-    color: white;
-    position: relative;
-    bottom: 25%;
-
-}
-header  a {
-    text-decoration: none;
-}
-header a:visited{
-    color: white;
-}
-header a:link{
-    color: white;
-}
-header a:hover{
-    color: rgba(128, 128, 128, 0.531);
-}
-
-.hamburg ul {
-    list-style-type: none;
     
 }
-
-#validation{
-    text-decoration: underline;
-    color: black;
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    
+}
+header ul li{
+    list-style-type: none;
+    color: white;
 }
 
-#headshotMini{
-    width: 80px;
-    border-radius: 30%;
+header h1 a:any-link{
+    color: white;
+}
+header h1 a{
+    text-decoration: none;
+}
+nav{
+    grid-area:nav;
+    background-color: black;
+    font-family: 'Hubballi', cursive;
+    width: 100%;
+    
+    
+}
+#year1{
+    text-decoration: grey underline;
+    color: white;
+}
+
+.list{
+    text-align: center;
     position: relative;
-    top: 15px;
+    bottom: 10px;
+}
+
+.list li {
+    display: inline-flex;
+    padding-left: 50px;
+}
+
+.list a {
+    text-decoration: none;
+}
+
+.list a:link{
+    color: white;
+}
+.list a:hover{
+    color: grey;
+}
+
+.list a:visited{
+    color: white;
+}
+#headshotMini{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
 }
 
 #headshotMini:hover{
     filter: grayscale(100);
 }
 
-nav{
-    grid-area: nav;
-    
-    width: 100vw;
-    text-decoration: none;
-    font-family: 'Hubballi', cursive;
-    margin-left: -8px;
- 
-}
-.list{
-    font-size: 3em;
-    color: white;
+#headshot {
     position: relative;
-    top: 5%;
-  
-    
+    float: right;
+    height: 500px;
+    width: 500px;
+    border-radius: 5%;
+    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+    right: 100px;
 }
-.list li {
-    display:inline-flex;
-    padding-left: 100px;
-    position: relative;
-    left: 25%;
-    font-size: 1.5em;
-    font-weight: bolder;
-    
-   
+#headshot:hover{
+    box-shadow: 10px -20px;
 }
-.list a{
-    text-decoration: none;
+.hamburg{
+    visibility: hidden;
 }
-
-.list li:hover{
-    color: white;
-}
-
-.list a:visited{
-    color: white;
-}
-#instagram {
-    width: 50px;
-}
-#instagram:hover{
-    filter: grayscale(100);
-}
-#linkedin {
-    width: 50px;
-}
-#linkedin:hover{
-    filter: grayscale(100);
-}
-#github {
-    width: 50px;
-}
-#github:hover{
-    filter: grayscale(100);
-}
-
 
 
 main{
-    grid-area: main;
-   
-    width: 100vw;
+    grid-area:main;
     font-family: 'Hubballi', cursive;
-    padding-bottom: 1000px;
-    margin-left: -8px;
-    color: white;
+    padding-bottom: 500px;
+    
+
 }
 
-.maintext p{
-    font-size: 10em;
-    position: relative;
-    top: 2%;
-    left: 26%;
-    text-align: center;
-    border: 2px solid transparent;
-    width: 55%;
-}
 .fling-minislide {width:100%; height:0px; padding-bottom: 50%; overflow:hidden; position:relative; }
 .fling-minislide img{ position:relative; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;
 }
@@ -174,54 +146,7 @@ main{
 
 
 
-
-
 footer{
-    grid-area: footer;
-    width: 100vw;
-    margin-left: -8px;
-    padding-bottom: 1600px;
-}
-
-footer p{
-    font-size:5em;
-    font-family: 'Hubballi', cursive;
-    color: white;
-    position: relative;
-    text-align: center;
-    top: 900px;
-}
-
-.media li {
-    display:inline-flex;
-    padding-left: 100px;
-    position: relative;
-    left: 45%;
-    top: 600px;
-    font-size: 1.5em
-
-}
-
-
-
-#hamburger{
-    visibility: hidden;
-}
-
-
-
-.techStack{
-position: relative;
-left:30%;
-top: 300px;
-}
-
-.techStack li{
-    display:inline-flex;
-    padding-left: 300px;
-    position: relative;
-}
-
-.techStack ul{
-    list-style-type: none;
+    grid-area:footer;
+    padding-bottom: 100px;
 }

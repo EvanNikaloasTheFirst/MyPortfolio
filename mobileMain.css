@@ -51,7 +51,7 @@ header h1 a{
 
 
 
-    #year3{
+    #home{
         text-decoration: underline;
         color: white;
     }
@@ -71,7 +71,7 @@ header h1 a{
         font-family: 'Hubballi', cursive;
         color: white;
         height: 30px;
-      bottom:20px;
+      bottom: 0px;
       left: 85%;
         
         
@@ -148,26 +148,58 @@ header h1 a{
 main{
     grid-area: main;
     width: 100%;
+    text-align: center;
 }
 
-#error {
-    position: relative;
-    right: 15%;
-}
- 
-.maintext p {
-    color: white;
-    position: relative;
-    left: 30%;
-}
 
+
+.maintext{
+    font-size: 3em;
+     color: white;
+     font-family: 'Hubballi', cursive;
+}
 
 footer{
     grid-area: footer;
     width: 100%;
 }
 
+.media ul {
+ display: inline-flex;
+}
 
+.media{
+    position: relative;
+    text-align: center;
+    right: 12px;
+}
+
+.media ul li {
+    list-style-type: none;
+    padding-left: 50px;
+}
+
+#instagram {
+    width: 30px;
+    height: 30px;
+}
+#linkedin {
+    width: 30px;
+    height: 30px;
+}
+#github {
+    width: 30px;
+    height: 30px;
+}
+
+#headshot{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    right: 2%;
+    border-radius: 5%;
+    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+}
 
 #headshotMini{
     width: 50px;
@@ -176,4 +208,3 @@ footer{
     position: relative;
     
 }
-

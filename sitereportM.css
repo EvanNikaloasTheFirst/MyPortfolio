@@ -1,336 +1,200 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
 body{
-    display: grid;
-    background-image: url(iphoneWP.jpg);
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:    "header "
-                            "nav"
-                            "main"
-                            "footer";
+
+ width: 100%;
+ overflow-x: hidden;
+ background-image: url(iphoneWP.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ grid-template-columns: auto;
+ grid-template-rows: 10% auto auto auto ;
+ grid-template-areas:    "header "
+                         "nav"
+                         "main"
+                         "footer";
 }
 
 
 header{
-    grid-area: header;
-    background-color: black;
-    width: 100%;
-
-    margin-left: -8px;
-
-    margin-top: -8px;
-    font-family: 'Hubballi', cursive;
-    height: 50%;
-    
-    
+ background-color: black;
+ grid-area: header;
+ position: relative;
+ 
+ 
+ font-family: 'Hubballi', cursive;
 }
-.hamburg li {
-    list-style-type: none;text-decoration: none;
+
+header ul {
+ list-style-type: none; 
 }
+
+header h1 {
+ font-size: 2em;
+ position: relative;
+ color: white;
+ top: 20px
+
+ 
+}
+
+header h1 a:any-link{
+ color: white;
+}
+
+header h1 a{
+ text-decoration: none;
+}
+
+
+
+ #sitereport{
+     text-decoration: underline;
+     color: white;
+ }
+ .shownav {
+     position: relative;
+     content: url(burgericon.png);
+     filter: invert(100);
+     z-index: 1;
+   height: 30px;
+   bottom: 20px;
+   left: 85%;
+     }
+ #hamburger{
+     position: relative;
+     text-decoration: none;
+     font-size: 1em;
+     font-family: 'Hubballi', cursive;
+     color: white;
+     height: 30px;
+   bottom:20px;
+   left: 85%;
+     
+     
+ }
+ /*When "an item" is clicked - show the menu */
+ 
+ /*when its clicked again remove it */
+ #clicked .off {display: none;}
+ #clicked .on{display: block;
+     transition: transition 5s ease-in;}
+ 
+ #clicked:target .on {display: none;
+     transition: transition 5s ease-in;}
+ #clicked:target .off {display: block;
+     transition: transition 5s ease-in;}
+ /* Target the nav - so the nav turns on an off*/
+ #clicked:target nav {display: none;
+     transition: transition 5s ease-in;}
+ 
+     @keyframes slide-in {
+         0% {
+             opacity: 0;
+             transform: translateX(-250px);
+         }
+ 
+         100% {
+             opacity: 1;
+             transform: translateX(0);
+         }
+     }
+ 
+     @keyframes slide-back {
+         0% {
+             opacity: 0;
+             transform: translateX(250px);
+         }
+ 
+         100% {
+             opacity: 1;
+             transform: translateX(0);
+         }
+     }
+ 
+     nav {
+         font-family: 'Hubballi', cursive;
+         background-color: black;
+         grid-area: nav;
+         font-family: 'Hubballi', cursive;
+         display: block;
+         top: 0;
+         position:fixed;
+         right: 50%;
+         width: 50%;
+         height: 100%;
+         z-index: 2;
+         animation: slide-in 1s ease 0s 1 normal none;
+     }
+     
+     .list{
+         font-size: 1em;
+         color: white;
+         position: relative;
+     }
+         .list a {
+             text-decoration: none;
+             color: white;
+             
+         }
+     .list ul li{
+        padding-top: 20px;
+         list-style-type: none;
+         display: block;
+     }
+main{
+ grid-area: main;
+ width: 100%;
+ color: white;
+}
+
+
+
+footer{
+ grid-area: footer;
+ width: 100%;
+}
+
+
+
+
 #headshotMini{
-    width: 30px;
-    border-radius: 30%;
-   
-}
-header h1{
-    font-size: 2em;
-    font-family: 'Hubballi', cursive;
-    
-    text-align: center;
-    position: relative;
-    bottom: 5%;
-}
-header a {
-    text-decoration: none;
-    color: white;
-}
-#sitereport{
-    text-decoration: underline;
-    color: white;
-}
-.shownav {
-    content: url(burgericon.png);
-    width: 45px;
-    position: relative;
-    left: 89%;
-    bottom: 55px;
-    filter: invert(100);
-    z-index: 1;
-  
-    }
-#hamburger{
-    position: relative;
-    text-decoration: none;
-    left: 89%;
-    font-size: 2em;
-    font-family: 'Hubballi', cursive;
-    bottom: 55px;
-}
-/*When "an item" is clicked - show the menu */
-#clicked .on{display: block;}
-/*when its clicked again remove it */
-#clicked .off {display: none;}
-
-#clicked:target .on {display: none;}
-#clicked:target .off {display: block;}
-/* Target the nav - so the nav turns on an off*/
-#clicked:target nav {display: none;}
-@keyframes slide-in {
-    0% {
-        opacity: 0;
-        transform: translateX(-250px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ position: relative;
+ 
 }
 
-@keyframes slide-back {
-    0% {
-        opacity: 0;
-        transform: translateX(250px);
-    }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-nav {
-    grid-area: nav;
-    background-image: url(navbg.jpg);
-    background-repeat: no-repeat;
-    font-family: 'Hubballi', cursive;
-    margin-left: -8px;
-    
-    display: block;
-    top: 0;
-    position:fixed;
-    right: 50%;
-    width: 50%;
-    height: 100%;
-    animation: slide-in 1s ease 0s 1 normal none;
-    z-index: 2;
-}
-
-.list{
-    font-size: 1em;
-    color: white;
-    position: relative;
-    right: 5%;
-    
-}
-    .list a {
-        text-decoration: none;
-        color: white;
-        
-    }
-    .list ul li{
-        padding-top: 50px;
-        list-style-type: none;
-    }
-main {
-    grid-area: main;
-    
-    width: 100%;
-    font-family: 'Hubballi', cursive;
-    padding-bottom: 600px;
-    margin-left: -8px;
-    color: white;
-}
-.maintext h1{
-    position: relative;
-    font-size: 2em;
-    font-family: 'Hubballi', cursive;
-    left: 5%;
-}
-.maintext p:nth-child(2){
-    position: relative;
-    font-size: 1em;
-    font-family: 'Hubballi', cursive;
-    
-    left: 5%;
-    border: 2px solid transparent;
-    width: 80%;
-    bottom: 20px;
-}
-
-.maintext p:nth-child(4){
-    position: relative;
-    font-size: 1em;
-    font-family: 'Hubballi', cursive;
-    
-    left: 5%;
-    border: 2px solid transparent;
-    width: 80%;
-    bottom: 37px;
-}
-
-.maintext p:nth-child(6){
-    position: relative;
-    font-size: 1em;
-    font-family: 'Hubballi', cursive;
-    left: 5%;
-    border: 2px solid transparent;
-    width: 80%;
-    bottom: 60px;
-}
-.maintext p:nth-child(8){
-    position: relative;
-    font-size: 1em;
-    font-family: 'Hubballi', cursive;
-    left: 5%;
-    border: 2px solid transparent;
-    width: 80%;
-    bottom: 20px;
-}
-.maintext p:nth-child(10){
-    position: relative;
-    font-size: 1em;
-    top: 10px;
-    font-family: 'Hubballi', cursive;
-    left: 5%;
-    border: 2px solid transparent;
-    width: 80%;
-    bottom: 20px;
-}
-
-#ss {
-    width:80%;
-    position: relative;
-    left: 5%;
-}
-
-#grid{
-    width: 200px;
-    position: relative;
-    left: 5%;
-    bottom: 50px;
-    border-radius: 5%;
-}
-
-#week1{
+#week1 {
     width: 80%;
     position: relative;
     left: 5%;
-    border-radius: 5%;
-    bottom: 35px;
+}
+#grid {
+    width: 80%;
+    position: relative;
+    left: 5%;
 }
 
 #draftOne{
-    width: 200px;
+    width: 80%;
     position: relative;
-    left: 5%;
-    bottom: 30px;
-    border-radius: 5%;
+    left: 5%; 
 }
 
 #oldmobiledesign{
-    width: 200px;
-    position: relative;
-    left: 5%;
-    border-radius: 5%;
-}
-#newDesign{
-    width: 250px;
-    border-radius: 5%;
+    width: 80%;
     position: relative;
     left: 5%;
 }
 
-#repo{
-    width: 200px;
-    border-radius: 5%;
+#ss{
+    width: 80%;
     position: relative;
-    top: 50px;
-    left: 1%;
+    left: 5%;
 }
-
-
-footer {
-    grid-area: footer;
-    width: 100%;
-    
-    
-    margin-left: -8px;
-}
-
-footer p{
-    font-size:1em;
-    font-family: 'Hubballi', cursive;
-    color: white;
-    position: relative;
-    text-align: center;
-    top: 25%;
-    
-}
-.media{
-    
-    position: relative;
-    bottom: 40%;
-    right: 7%;
-    
-}
-.media li{
-    text-decoration: none;
-    list-style-type: none;
-    padding-top: 10px;
-}
-
-.media ul  {
-    display:block;
-    padding-top: 100px;
-    position: relative;
-    font-size: 1.5em
-
-}
-
-.techStack{
-    position: relative;
-    text-align: center;
-    top: 15%;
-    }
-    
-    .techStack li{
-        display:block;
-        padding-top: 80px;
-        position: relative;
-    }
-    
-    .techStack ul{
-        list-style-type: none;
-    }
-
-    #java {
-        width: 70px;
-    }
-    #html2 {
-        width: 70px;
-    }
-    #css2 {
-        width: 70px;
-    }
-    #sql2 {
-        width: 70px;
-    }
-    #oracle2 {
-        width: 70px;
-    }
-   
-  
-
-    #instagram{
-        width: 20px;
-    }
-    #github{
-        width: 20px;
-    }
-    #linkedin{
-        width:20px;
-    }

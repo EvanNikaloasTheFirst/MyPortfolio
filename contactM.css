@@ -1,165 +1,162 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
 body{
-    display: grid;
-    background-image: url(iphoneWP.jpg);
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:    "header "
-                            "nav"
-                            "main"
-                            "footer";
+
+ width: 100%;
+ overflow-x: hidden;
+ background-image: url(iphoneWP.jpg);
+ background-repeat: no-repeat;
+ grid-template-columns: auto;
+ grid-template-rows: 10% auto auto auto ;
+ grid-template-areas:    "header "
+                         "nav"
+                         "main"
+                         "footer";
 }
 
 
 header{
-    grid-area: header;
-    background-color: black;
-    width: 100%;
-
-    margin-left: -8px;
-
-    margin-top: -8px;
-    font-family: 'Hubballi', cursive;
-    height: 50%;
-    
-    
-}
-.hamburg li {
-    list-style-type: none;text-decoration: none;
-}
-#headshotMini{
-    width: 30px;
-    border-radius: 30%;
-   
-}
-header h1{
-    font-size: 2em;
-    font-family: 'Hubballi', cursive;
-    
-    text-align: center;
-    position: relative;
-    bottom: 5%;
-}
-header a {
-    text-decoration: none;
-    color: white;
+ background-color: black;
+ grid-area: header;
+ position: relative;
+ 
+ 
+ font-family: 'Hubballi', cursive;
 }
 
-.shownav {
-    content: url(burgericon.png);
-    width: 45px;
-    position: relative;
-    left: 89%;
-    bottom: 55px;
-    filter: invert(100);
-    z-index: 1;
-  
-    }
-#hamburger{
-    position: relative;
-    text-decoration: none;
-    left: 89%;
-    font-size: 2em;
-    font-family: 'Hubballi', cursive;
-    bottom: 55px;
-}
-/*When "an item" is clicked - show the menu */
-#clicked .on{display: block;}
-/*when its clicked again remove it */
-#clicked .off {display: none;}
-
-#clicked:target .on {display: none;}
-#clicked:target .off {display: block;}
-/* Target the nav - so the nav turns on an off*/
-#clicked:target nav {display: none;}
-#contact{
-    text-decoration: underline;
-    color: white;
+header ul {
+ list-style-type: none; 
 }
 
-@keyframes slide-in {
-    0% {
-        opacity: 0;
-        transform: translateX(-250px);
-    }
+header h1 {
+ font-size: 2em;
+ position: relative;
+ color: white;
+ top: 20px
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+ 
 }
 
-@keyframes slide-back {
-    0% {
-        opacity: 0;
-        transform: translateX(250px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-nav {
-    grid-area: nav;
-    background-image: url(navbg.jpg);
-    background-repeat: no-repeat;
-    font-family: 'Hubballi', cursive;
-    margin-left: -8px;
-    
-    display: block;
-    top: 0;
-    position:fixed;
-    right: 50%;
-    width: 50%;
-    height: 100%;
-    animation: slide-in 1s ease 0s 1 normal none;
-    z-index: 2;
+header h1 a:any-link{
+ color: white;
 }
 
-.list{
-    font-size: 1em;
-    color: white;
-    position: relative;
-    right: 5%;
-    
-}
-    .list a {
-        text-decoration: none;
-        color: white;
-        
-    }
-    .list ul li{
-        padding-top: 50px;
-        list-style-type: none;
-    }
-main {
-    grid-area: main;
-    
-    width: 100%;
-    font-family: 'Hubballi', cursive;
-    padding-bottom: 300px;
-    margin-left: -8px;
+header h1 a{
+ text-decoration: none;
 }
 
-.maintext p{
-    font-size: 1em;
-    position: relative;
-    left: 10%;
-    color: white;
-}
 
+
+ #contact{
+     text-decoration: underline;
+     color: white;
+ }
+ .shownav {
+     position: relative;
+     content: url(burgericon.png);
+     filter: invert(100);
+     z-index: 1;
+   height: 30px;
+   bottom: 20px;
+   left: 85%;
+     }
+ #hamburger{
+     position: relative;
+     text-decoration: none;
+     font-size: 1em;
+     font-family: 'Hubballi', cursive;
+     color: white;
+     height: 30px;
+   bottom:20px;
+   left: 85%;
+     
+     
+ }
+ /*When "an item" is clicked - show the menu */
+ 
+ /*when its clicked again remove it */
+ #clicked .off {display: none;}
+ #clicked .on{display: block;
+     transition: transition 5s ease-in;}
+ 
+ #clicked:target .on {display: none;
+     transition: transition 5s ease-in;}
+ #clicked:target .off {display: block;
+     transition: transition 5s ease-in;}
+ /* Target the nav - so the nav turns on an off*/
+ #clicked:target nav {display: none;
+     transition: transition 5s ease-in;}
+ 
+     @keyframes slide-in {
+         0% {
+             opacity: 0;
+             transform: translateX(-250px);
+         }
+ 
+         100% {
+             opacity: 1;
+             transform: translateX(0);
+         }
+     }
+ 
+     @keyframes slide-back {
+         0% {
+             opacity: 0;
+             transform: translateX(250px);
+         }
+ 
+         100% {
+             opacity: 1;
+             transform: translateX(0);
+         }
+     }
+ 
+     nav {
+         font-family: 'Hubballi', cursive;
+         background-color: black;
+         grid-area: nav;
+         font-family: 'Hubballi', cursive;
+         display: block;
+         top: 0;
+         position:fixed;
+         right: 50%;
+         width: 50%;
+         height: 100%;
+         z-index: 2;
+         animation: slide-in 1s ease 0s 1 normal none;
+     }
+     
+     .list{
+         font-size: 1em;
+         color: white;
+         position: relative;
+     }
+         .list a {
+             text-decoration: none;
+             color: white;
+             
+         }
+     .list ul li{
+        padding-top: 20px;
+         list-style-type: none;
+         display: block;
+     }
+main{
+ grid-area: main;
+ width: 100%;
+}
 form{
     display: grid;
     width: 90%;
-    left: 7%;
+    left: 4%;
     grid-template-columns:  100%;
     align-items: center;
     position: relative;
     border: 3px solid transparent;
+    top: 30px;
     
 }
 
@@ -198,84 +195,19 @@ form{
     padding-bottom: 10px;
     padding-top: 10px;
 }
-footer {
-    grid-area: footer;
-    width: 100%;
 
-    
-    margin-left: -8px;
+
+footer{
+ grid-area: footer;
+ width: 100%;
 }
 
-footer p{
-    font-size:1em;
-    font-family: 'Hubballi', cursive;
-    color: white;
-    position: relative;
-    text-align: center;
-    top: 25%;
-    
-}
-.media{
-    
-    position: relative;
-    bottom: 40%;
-    right: 7%;
-    
-}
-.media li{
-    text-decoration: none;
-    list-style-type: none;
-    padding-top: 10px;
+
+#headshotMini{
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ position: relative;
+ 
 }
 
-.media ul  {
-    display:block;
-    padding-top: 100px;
-    position: relative;
-    font-size: 1.5em
-
-}
-
-.techStack{
-    position: relative;
-    text-align: center;
-    top: 15%;
-    }
-    
-    .techStack li{
-        display:block;
-        padding-top: 80px;
-        position: relative;
-    }
-    
-    .techStack ul{
-        list-style-type: none;
-    }
-
-    #java {
-        width: 70px;
-    }
-    #html2 {
-        width: 70px;
-    }
-    #css2 {
-        width: 70px;
-    }
-    #sql2 {
-        width: 70px;
-    }
-    #oracle2 {
-        width: 70px;
-    }
-   
-  
-
-    #instagram{
-        width: 20px;
-    }
-    #github{
-        width: 20px;
-    }
-    #linkedin{
-        width:20px;
-    }

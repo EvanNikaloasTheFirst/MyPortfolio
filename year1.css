@@ -1,302 +1,237 @@
-body {
-    
-    display: grid;
-    height: 100%;
-    width: 100%;
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Hubballi', cursive;
+    background-image:url(desktopWP.JPG);
     overflow-x: hidden;
-    background-image: url(desktopWP.JPG);
     grid-template-columns: auto;
-    grid-template-rows: 3% 4% 70% 5%;
-    grid-template-areas:"header header header"
-                            "nav nav nav"
-                            "main main main"
-                        "footer footer footer";
+    grid-template-rows: 10% 15% auto 5%;
+    grid-template-areas: "header"
+                            "nav"
+                            "main"
+                            "footer";
 }
 
 header{
-    grid-area: header;
-    background-color: black;
-    width: 100%;
-    padding-bottom: 0em;
-    margin-left: -8px;
-
-    margin-top: -8px;
-    font-family: 'Hubballi', cursive;
-    height: 67%;
-
-    
-    
-}
-header h1{
-    font-size: 8em;
-    font-family: 'Hubballi', cursive;
-    text-align: center;
+    grid-area:header;
     color: white;
-    position: relative;
-    bottom: 25%;
-
+    font-family: 'Hubballi', cursive;
+    
 }
-header  a {
+
+header h1 a:any-link{
+    color: white;
+}
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    
+}
+header ul li{
+    list-style-type: none;
+    color: white;
+}
+
+header h1 a{
     text-decoration: none;
 }
-header a:visited{
-    color: white;
-}
-header a:link{
-    color: white;
-}
-header a:hover{
-    color: rgba(128, 128, 128, 0.531);
-}
-
-.hamburg ul {
-    list-style-type: none;
+nav{
+    grid-area:nav;
+    background-color: black;
+    font-family: 'Hubballi', cursive;
+    width: 100%;
+    
     
 }
-
-
 #year1{
-    text-decoration: underline;
-    color: black;
+    text-decoration: grey underline;
+    color: white;
 }
 
-#headshotMini{
-    width: 80px;
-    border-radius: 30%;
+.list{
+    text-align: center;
     position: relative;
-    top: 15px;
+    bottom: 10px;
+}
+
+.list li {
+    display: inline-flex;
+    padding-left: 50px;
+}
+
+.list a {
+    text-decoration: none;
+}
+
+.list a:link{
+    color: white;
+}
+.list a:hover{
+    color: grey;
+}
+
+.list a:visited{
+    color: white;
+}
+#headshotMini{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 14px;
 }
 
 #headshotMini:hover{
     filter: grayscale(100);
 }
 
-nav{
-    grid-area: nav;
-   
-    width: 100vw;
-    text-decoration: none;
-    font-family: 'Hubballi', cursive;
-    margin-left: -8px;
- 
-}
-.list{
-    font-size: 3em;
-    color: white;
+#headshot {
     position: relative;
-    bottom:  25%;
-  
-    
-}
-.list li {
-    display:inline-flex;
-    padding-left: 100px;
-    position: relative;
-    left: 25%;
-    font-size: 1.5em;
-    font-weight: bolder;
-    
-   
-}
-.list a{
-    text-decoration: none;
-}
-
-.list li:hover{
-    color: white;
-}
-
-.list a:visited{
-    color: white;
-}
-#instagram {
-    width: 50px;
-}
-#instagram:hover{
-    filter: grayscale(100);
-}
-#linkedin {
-    width: 50px;
-}
-#linkedin:hover{
-    filter: grayscale(100);
-}
-#github {
-    width: 50px;
-}
-#github:hover{
-    filter: grayscale(100);
-}
-
-
-
-main{
-    grid-area: main;
-    
-    width: 100vw;
-    font-family: 'Hubballi', cursive;
-    padding-bottom: 1000px;
-    margin-left: -8px;
-}
-.maintext p{
-    font-size: 5em;
-    position: relative;
-    top: 300px;
-    left: 5%;
-    
-    
-}
-.maintext p{
-
-    font-family: 'Hubballi', cursive;
-    color: white;
-    position: relative;
-   
-}
-
-.maintext p:nth-child(1){
-   top: -330px;
-    left: 42%;
-    
-    font-size: 10em;
-}
-
-.maintext p:nth-child(2){
-    position: relative;
-    text-align: center;
-    top: -200px;
-    border: 2px solid transparent;
-    width: 70%;
-    margin-left: 12%;
-}
-.maintext ul{
-    font-size: 5em;
-    position: relative;
-    text-align: center;
-    top: -200px;
-    border: 2px solid transparent;
-    width: 40%;
-    margin-left: 28%;
-    list-style-type: none;
-    color: grey;
-}
-
-#dbms {
-    position: relative;
-    left: 12%;
-    top: 150px;
+    float: right;
+    height: 500px;
+    width: 500px;
     border-radius: 5%;
-    width: 1500px;
+    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+    right: 100px;
 }
-
-.SE1{
-    font-family: 'Hubballi', cursive;
-    color: white;
-    position: relative;
-    font-size: 4em;
+#headshot:hover{
+    box-shadow: 10px -20px;
 }
-
-.SE1 p:nth-child(2) {
-    position: relative;
-    left: 50%;
-    bottom: 830px;
-    border: 2px solid transparent;
-    width: 40%;
-}
-
-.programming{
-    font-family: 'Hubballi', cursive;
-    color: white;
-    position: relative;
-    font-size: 4em;
-}
-#ccprogram{
-    position: relative;
-    left: 12%;
-    bottom: 260px;
-    border-radius: 5%;
-    width: 1500px
-}
-
-
-.programming p:nth-child(2){
-    position: relative;
-    left: 50%;
-    bottom: 830px;
-    border: 2px solid transparent;
-    width: 40%;
-}
-
-.webDev{
-    font-family: 'Hubballi', cursive;
-    color: white;
-    position: relative;
-    font-size: 4em;
-}
-
-#marley {
-    position: relative;
-    left: 12%;
-    bottom: 300px;
-    border-radius: 5%;
-    width: 1500px
-}
-
-.webDev p:nth-child(2){
-    position: relative;
-    left: 50%;
-    bottom: 1230px;
-    border: 2px solid transparent;
-    width: 40%;
-
-}
-
-footer{
-    grid-area: footer;
-    width: 100vw;
-    margin-left: -8px;
-    padding-bottom: 1600px;
-}
-
-footer p{
-    font-size:5em;
-    font-family: 'Hubballi', cursive;
-    color: white;
-    position: relative;
-    text-align: center;
-    top: 900px;
-}
-
-.media li {
-    display:inline-flex;
-    padding-left: 100px;
-    position: relative;
-    left: 45%;
-    top: 600px;
-    font-size: 1.5em
-
-}
-
-
-
-#hamburger{
+.hamburg{
     visibility: hidden;
 }
 
 
-
-.techStack{
-position: relative;
-margin-left: 25%;
-top: 300px;
+main{
+    grid-area:main;
+    padding-bottom: 500px;
 }
-
-.techStack li{
-    display:inline-flex;
-    padding-left: 300px;
+main{
     position: relative;
+    top: 80px;
+}
+.maintext p{
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    width: 60%;
+    position: relative;
+    left: 20%;
 }
 
-.techStack ul{
+
+
+
+.SE1 p:nth-child(2){
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    width: 60%;
+    position: relative;
+    bottom: 600px;
+    left: 20%;
+}
+
+.SE1 p:nth-child(3){
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    width: 60%;
+    position: relative;
+    left: 20%;
+  
+
+}
+
+#dbms {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    top: 280px;
+    left: 20%;
+}
+
+.maintext ul {
+    color: white;
+    font-size: 2em;
+    position: relative;
+    left: 20%;
+  
+}
+.maintext ul li {
     list-style-type: none;
 }
+
+.programming p {
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    width: 60%;
+    position: relative;
+    top: 100px;
+    left: 20%;
+}
+
+#ccprogram {
+    position: relative;
+    top: 200px;
+    left: 20%;
+}
+
+#marley {
+    width: 1300px;
+    height: 800px;
+    position: relative;
+    top: 120px;
+}
+
+#pfdesign{
+    width: 1300px;
+    height: 800px;
+    position: relative;
+    top: 30px;
+}
+
+.webDev{
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    width: 60%;
+    position: relative;
+    top: 220px;
+    left: 20%;
+
+}
+
+.portfolio {
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 400px;
+}
+
+#branch{
+    width: 20px;
+}
+
+.footerlist ul {
+    display:  inline-flex;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+footer{
+    grid-area:footer;
+    padding-bottom: 100px;
+    font-family: 'Hubballi', cursive;
+}
+

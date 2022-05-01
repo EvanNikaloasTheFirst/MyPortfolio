@@ -1,280 +1,255 @@
-body {
-    
-    display: grid;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    background-image: url(desktopWP.JPG);
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image:url(desktopWP.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-template-columns: auto;
-    grid-template-rows: 3% 4% 70% 5%;
-    grid-template-areas:"header header header"
-                            "nav nav nav"
-                            "main main main"
-                        "footer footer footer";
+    grid-template-rows: 10% 15% auto 5%;
+    grid-template-areas: "header"
+                            "nav"
+                            "main"
+                            "footer";
 }
 
 header{
-    grid-area: header;
-    background-color: black;
-    width: 100vw;
-    margin-left: -8px;
-    margin-top: -8px;
+    grid-area:header;
+    color: white;
     font-family: 'Hubballi', cursive;
-    height: 6.3vh;
+    
 }
-header h1{
-    font-size: 8em;
-    font-family: 'Hubballi', cursive;
+header h1 {
     text-align: center;
-    color: white;
-    position: relative;
-    bottom: 20%;
-
-}
-header  a {
-    text-decoration: none;
-}
-header a:visited{
-    color: white;
-}
-header a:link{
-    color: white;
-}
-header a:hover{
-    color: rgba(128, 128, 128, 0.531);
-}
-
-.hamburg ul {
-    list-style-type: none;
+    font-size: 3em;
     
 }
 
-#blog{
-    text-decoration: underline;
-    color: black;
+
+header h1 a{
+    text-decoration: none;
 }
 
-#headshotMini{
-    width: 80px;
-    border-radius: 30%;
+header h1 a:any-link{
+    color: white;
+}
+nav{
+    grid-area:nav;
+    background-color: black;
+    font-family: 'Hubballi', cursive;
+    width: 100%;
+    
+    
+}
+#year1{
+    text-decoration: grey underline;
+    color: white;
+}
+
+.list{
+    text-align: center;
     position: relative;
-    top: 15px;
+    bottom: 10px;
+}
+
+.list li {
+    display: inline-flex;
+    padding-left: 50px;
+}
+
+.list a {
+    text-decoration: none;
+}
+
+.list a:link{
+    color: white;
+}
+.list a:hover{
+    color: grey;
+}
+
+.list a:visited{
+    color: white;
+}
+#headshotMini{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
 }
 
 #headshotMini:hover{
     filter: grayscale(100);
 }
 
-nav{
-    grid-area: nav;
-    width: 100vw;
-    text-decoration: none;
-    font-family: 'Hubballi', cursive;
-    margin-left: -8px;
- 
-}
-.list{
-    font-size: 3em;
-    color: white;
+#headshot {
     position: relative;
-    bottom:  15%;
-  
-    
-}
-.list li {
-    display:inline-flex;
-    padding-left: 100px;
-    position: relative;
-    left: 25%;
-    font-size: 1.5em;
-    font-weight: bolder;
-    
-   
-}
-.list a{
-    text-decoration: none;
-}
-
-.list li:hover{
-    color: white;
-}
-
-.list a:visited{
-    color: white;
-}
-#instagram {
-    width: 50px;
-}
-#instagram:hover{
-    filter: grayscale(100);
-}
-#linkedin {
-    width: 50px;
-}
-#linkedin:hover{
-    filter: grayscale(100);
-}
-#github {
-    width: 50px;
-}
-#github:hover{
-    filter: grayscale(100);
-}
-
-
-
-main{
-    grid-area: main;
-    width: 100vw;
-    font-family: 'Hubballi', cursive;
-    padding-bottom: 1000px;
-    margin-left: -8px;
-    color: white;
-}
-
-.maintext p{
-    font-size: 5em;
-    position: relative;
-    top: 300px;
-    left: 5%;
-}
-
-.maintext h1 {
-    position: relative;
-    left: 48%;
-    bottom: 170px;
-    font-size: 10em;
-    color: white;
-}
-
-.maintext p:nth-child(2){
-    border: 2px solid transparent;
-    width:70%;
-    left: 17%;
-    top: -100px;
-}
-
-.maintext p:nth-child(3){
-    border: 2px solid transparent;
-    width:70%;
-    left: 48%;
-    top: -100px;
-    
-}
-
-.currencyconverter p{
-    font-size: 5em;
-    position: relative;
-    left: 5%;
-    color: white;
-}
-
-.currencyconverter p:nth-child(1){
-    border: 2px solid transparent;
-    width:70%;
-    left: 17%;
-    top: 50px;
-}
-
-#MarleyWP {
+    float: right;
+    height: 500px;
+    width: 500px;
     border-radius: 5%;
-    position: relative;
-    left: 30%;
-    width: 2500px;
-    top: 100px;
+    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+    right: 100px;
 }
-
-#ccprogram{
-    width: 2000px;
-    position: relative;
-    left: 35%;
-    top: 120px;
-    border-radius: 5%;
+#headshot:hover{
+    box-shadow: 10px -20px;
 }
-
-.Marley p{
-    font-size: 5em;
-    position: relative;
-    top: 300px;
-    left: 5%;
-    color: white;
-}
-
-.Marley p:nth-child(2){
-    border: 2px solid transparent;
-    width:70%;
-    left: 17%;
-    top: -1700px;
-}
-
-.portfolio p{
-    font-size: 5em;
-    position: relative;
-    left: 5%;
-    color: white;
-    
-}
-
-.portfolio p:nth-child(1){
-    top: 100px;
-    border: 2px solid transparent;
-    width:70%;
-    left: 17%;
-}
-
-#pfdesign{
-    width: 2000px;
-    position: relative;
-    top: 200px;
-    left: 35%;
-}
-
-footer{
-    grid-area: footer;
-    width: 100vw;
-    margin-left: -8px;
-    padding-bottom: 1600px;
-}
-
-footer p{
-    font-size:5em;
-    font-family: 'Hubballi', cursive;
-    color: white;
-    position: relative;
-    text-align: center;
-    top: 900px;
-}
-
-.media li {
-    display:inline-flex;
-    padding-left: 100px;
-    position: relative;
-    left: 45%;
-    top: 600px;
-    font-size: 1.5em
-
-}
-
-
-
-#hamburger{
+.hamburg{
     visibility: hidden;
 }
 
 
-
-.techStack{
-position: relative;
-left:30%;
-top: 300px;
+main{
+    grid-area:main;
+    font-family: 'Hubballi', cursive;
+    padding-bottom: 500px;
 }
 
-.techStack li{
-    display:inline-flex;
-    padding-left: 300px;
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.maintext h1 {
+    color: white;
+    font-size: 4em;
+    border: 2px solid transparent;
+    width: 60%;
     position: relative;
+    left: 20%;
 }
 
-.techStack ul{
-    list-style-type: none;
+.maintext p{
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    width: 60%;
+    position: relative;
+    top: 100px;
+    left: 20%;
+}
+
+.Marley {
+    width: 30%;
+    height: 1000px;
+    background-color: (#C0C0C0);
+    background: linear-gradient(-45deg,rgba(255, 255, 255, 0.395),grey,white);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+    border-radius: 5%;
+    position: relative;
+    left: 10%;
+    top: 150px;
+    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+}
+.Marley:hover{
+transform: scale(1.2);
+}
+
+.Marley p {
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    width: 60%;
+    position: relative;
+    top: 110px;
+    left: 20%;
+}
+#MarleyWP {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 110px;
+    border-radius: 5%;
+}
+
+.currencyconverter {
+    width: 30%;
+    height: 1000px;
+    background-color: (#C0C0C0);
+    background: linear-gradient(-45deg,rgba(255, 255, 255, 0.395),grey,white);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+    border-radius: 5%;
+    position: relative;
+    left: 60%;
+    bottom: 850px;
+    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+}
+.currencyconverter:hover{
+    transform: scale(1.2);
+    }
+
+    #ccprogram{
+        position: relative;
+        top: 30px;
+    }
+
+.currencyconverter p {
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    width: 60%;
+    position: relative;
+    top: 410px;
+    left: 20%;
+}
+
+.portfolio{
+    width: 30%;
+    height: 1000px;
+    background-color: (#C0C0C0);
+    background: linear-gradient(-45deg,rgba(255, 255, 255, 0.395),grey,white);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+    border-radius: 5%;
+    position: relative;
+    bottom: 550px;
+    left: 10%;
+    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
+}
+.portfolio:hover{
+    transform: scale(1.2);
+    }
+#pfdesign{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    bottom: 20px;
+    border-radius: 5%;
+
+}
+.portfolio p {
+    color: white;
+    font-size: 2em;
+    border: 2px solid transparent;
+    position: relative;
+    width: 60%;
+    top: 450px;
+    left: 20%;
+}
+
+#ccprogram {
+    width: 70%;
+    position: relative;
+    border-radius: 5%;
+    left: 15%;
+    bottom: 110px;
+}
+
+footer{
+    grid-area:footer;
+    padding-bottom: 100px;
 }
