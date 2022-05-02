@@ -6,9 +6,11 @@
 
 
 body{
-    font-family: 'Hubballi', cursive;
+    
     background-image:url(desktopWP.JPG);
-    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     grid-template-columns: auto;
     grid-template-rows: 10% 15% auto 5%;
     grid-template-areas: "header"
@@ -21,6 +23,7 @@ header{
     grid-area:header;
     color: white;
     font-family: 'Hubballi', cursive;
+    width: 100%;
     
 }
 
@@ -45,11 +48,13 @@ nav{
     background-color: black;
     font-family: 'Hubballi', cursive;
     width: 100%;
+    margin: 0;
+    padding: 0
     
     
 }
 #year1{
-    text-decoration: grey underline;
+    text-decoration: underline;
     color: white;
 }
 
@@ -57,11 +62,13 @@ nav{
     text-align: center;
     position: relative;
     bottom: 10px;
+    
 }
 
 .list li {
     display: inline-flex;
     padding-left: 50px;
+    
 }
 
 .list a {
@@ -90,18 +97,6 @@ nav{
     filter: grayscale(100);
 }
 
-#headshot {
-    position: relative;
-    float: right;
-    height: 500px;
-    width: 500px;
-    border-radius: 5%;
-    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
-    right: 100px;
-}
-#headshot:hover{
-    box-shadow: 10px -20px;
-}
 .hamburg{
     visibility: hidden;
 }
@@ -109,92 +104,105 @@ nav{
 
 main{
     grid-area:main;
-    padding-bottom: 500px;
+    padding-bottom: 1300px;
+    width: 100%;
+    
 }
 main{
     position: relative;
     top: 80px;
+    
 }
-.maintext p{
+.maintext {
     color: white;
     font-size: 2em;
     border: 2px solid transparent;
     width: 60%;
     position: relative;
-    left: 20%;
+    left: 25vw;
+
+    
+
+   
+    
 }
 
-
-
-
-.SE1 p:nth-child(2){
+.SE1  {
+    display: block;
+    position: relative;
+    left: 25vw;
     color: white;
     font-size: 2em;
     border: 2px solid transparent;
     width: 60%;
-    position: relative;
-    bottom: 600px;
-    left: 20%;
+    top: 13vh;
 }
 
-.SE1 p:nth-child(3){
-    color: white;
-    font-size: 2em;
-    border: 2px solid transparent;
-    width: 60%;
-    position: relative;
-    left: 20%;
-  
 
-}
+
 
 #dbms {
-    width: 800px;
-    height: 600px;
+    width: 30%;
     position: relative;
-    top: 280px;
-    left: 20%;
+    top: 12vh;
+    display: block;
+    left: 40vw;
+    
+    
 }
 
-.maintext ul {
+.maintext ul{
     color: white;
-    font-size: 2em;
+    font-size: 1em;
     position: relative;
-    left: 20%;
+    display: block;
+    top: 8vh;
   
 }
+
+
 .maintext ul li {
     list-style-type: none;
 }
 
-.programming p {
+.programming  {
+    display: block;
+    position: relative;
+    left: 25vw;
     color: white;
     font-size: 2em;
     border: 2px solid transparent;
     width: 60%;
-    position: relative;
-    top: 100px;
-    left: 20%;
+    display: block;
+    top: 30vh;
+    
 }
 
 #ccprogram {
     position: relative;
-    top: 200px;
-    left: 20%;
+    display: block;
+    top: 5vh;
+    width: 80%;
+    
 }
 
 #marley {
-    width: 1300px;
-    height: 800px;
+    width: 80%;
     position: relative;
-    top: 120px;
+    top: 20vh;
+    display: block;
+
+   
 }
 
 #pfdesign{
-    width: 1300px;
-    height: 800px;
+    width: 80%;
+
     position: relative;
-    top: 30px;
+
+    display: block;
+    
+    top: 10vh;
 }
 
 .webDev{
@@ -203,8 +211,10 @@ main{
     border: 2px solid transparent;
     width: 60%;
     position: relative;
-    top: 220px;
-    left: 20%;
+    display: block;
+    left: 25vw;
+    top: 50vh;
+   
 
 }
 
@@ -214,13 +224,13 @@ main{
     border: 2px solid transparent;
     width: 60%;
     position: relative;
-    left: 20%;
-    top: 400px;
+    display: block;
+    left: 25vw;
+    
+    top: 80vh;
 }
 
-#branch{
-    width: 20px;
-}
+
 
 .footerlist ul {
     display:  inline-flex;

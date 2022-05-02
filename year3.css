@@ -9,6 +9,7 @@ body{
     background-image:url(desktopWP.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+    
     grid-template-columns: auto;
     grid-template-rows: 10% 15% auto 5%;
     grid-template-areas: "header"
@@ -21,6 +22,7 @@ header{
     grid-area:header;
     color: white;
     font-family: 'Hubballi', cursive;
+    width: 100%;
     
 }
 header h1 {
@@ -49,7 +51,7 @@ nav{
     
 }
 #year3{
-    text-decoration: grey underline;
+    text-decoration:  underline;
     color: white;
 }
 
@@ -90,18 +92,7 @@ nav{
     filter: grayscale(100);
 }
 
-#headshot {
-    position: relative;
-    float: right;
-    height: 500px;
-    width: 500px;
-    border-radius: 5%;
-    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
-    right: 100px;
-}
-#headshot:hover{
-    box-shadow: 10px -20px;
-}
+
 .hamburg{
     visibility: hidden;
 }
@@ -111,22 +102,23 @@ main{
     grid-area:main;
     font-family: 'Hubballi', cursive;
     padding-bottom: 500px;
+    width: 100%;
 }
 
 #error{
+    width: 40%;
     position: relative;
-    left: 40%;
+    left: 30vw;
+    
+
 }
 
-.maintext p {
-    position: relative;
-    color: white;
-    font-size: 3em;
-    left: 40%;
-}
+
+
 
 
 footer{
     grid-area:footer;
     padding-bottom: 100px;
+    width: 100%;
 }

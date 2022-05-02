@@ -48,7 +48,7 @@ nav{
     
 }
 #contact{
-    text-decoration: grey underline;
+    text-decoration:  underline;
     color: white;
 }
 
@@ -121,9 +121,14 @@ form{
     align-items: center;
     position: relative;
     border: 3px solid transparent;
-    left: 35%;
+    margin: auto;
+    display: grid;
+    max-width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+
   
-    top: 200px;
+
 
 }
 
@@ -134,16 +139,18 @@ form{
     font-size: 25px;
     font-family:  'PT Sans', sans-serif;
     height: 400px;
-    width: 800px;
+    width:58%;
     resize: none;
+    text-align: center;
 }
 #Names{
     background-color: black;
     color: white;
     border-color: black;
-
     font-size: 25px;
     font-family:  'PT Sans', sans-serif;
+    
+    
 }
 #submitbtn{
     background-color: black;
@@ -160,7 +167,8 @@ form{
     font-size: 25px;
     font-family:  'PT Sans', sans-serif;
     height: 100px;
-    width: 800px;
+    width:58%;
+    text-align: center;
 }
 #lastname{
     background-color: black;
@@ -168,17 +176,19 @@ form{
     font-size: 25px;
     font-family:  'PT Sans', sans-serif;
     height: 100px;
-    width: 800px;
+    width:58%;
+    text-align: center;
 }
 #Query{
     height: 100px;
-    width: 800px;
+    width:58%;
     background-color: black;
     color: white;
+    text-align: center;
 }
 #submitbtn{
     height: 50px;
-    width: 800px;
+    width:58%;
 }
 
 footer{

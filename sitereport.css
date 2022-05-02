@@ -45,11 +45,13 @@ nav{
     background-color: black;
     font-family: 'Hubballi', cursive;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     
     
 }
-#year1{
-    text-decoration: grey underline;
+#sitereport{
+    text-decoration: underline;
     color: white;
 }
 
@@ -90,18 +92,7 @@ nav{
     filter: grayscale(100);
 }
 
-#headshot {
-    position: relative;
-    float: right;
-    height: 500px;
-    width: 500px;
-    border-radius: 5%;
-    box-shadow: -5px -5px 30px 5px grey, 5px 5px 30px 5px grey;
-    right: 100px;
-}
-#headshot:hover{
-    box-shadow: 10px -20px;
-}
+
 .hamburg{
     visibility: hidden;
 }
@@ -113,23 +104,19 @@ main{
     padding-bottom: 500px;
 }
 
-.maintext h1{
+
+.maintext {
     font-size: 2em;
     color: white;
     border: 2px solid transparent;
     width: 60%;
     position: relative;
-    
-    left: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.maintext p{
+
+.maintext h1 {
     font-size: 2em;
-    color: white;
-    border: 2px solid transparent;
-    width: 60%;
-    position: relative;
-    
-    left: 20%;
 }
 
 .maintext ul {
@@ -137,27 +124,31 @@ main{
 }
 #week1{
     position: relative;
-    left: 20%;
+    width: 50%;
+   
+    display: block;
 }
 
 #grid
     {
+        width: 40%;
         position: relative;
-        left: 20%;
+        
     }
 #draftOne {
     position: relative;
-    left: 20%;
+    width: 40%;
+    
 }
 #oldmobiledesign {
     position: relative;
-    left: 20%;
+    width: 40%;
 }
 
 #ss{
     position: relative;
     width: 70%;
-    left: 15%;
+
 }
 
 footer{
